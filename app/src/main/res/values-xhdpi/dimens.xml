@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- xhdpi -->
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="yellow_rating_bar_size">38px</dimen>
+    <dimen name="item_more_image_height">96dp</dimen>
+    <dimen name="text_normal">8sp</dimen>
+    <dimen name="text_pressed">9sp</dimen>
+    <dimen name="collect_case_image_h">180dp</dimen>
+    <dimen name="text_title_size">15sp</dimen>
+    <dimen name="image_w">102dp</dimen>
+    <!--  -->
+    <dimen name="item_height">45dp</dimen>
+    <dimen name="my_top_height">230dp</dimen>
+    
+    <dimen name="my_top_sjheight">220dp</dimen>
+    <dimen name="my_top_zxheight">188dp</dimen>
+    
+    <dimen name="my_logo_height">72dp</dimen>
+    <!-- sp -->
+    <dimen name="text_size_small">15sp</dimen>
+    <dimen name="text_size_title">15sp</dimen>
+
+</resources>

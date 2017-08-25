@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+    tools:context=".RecordActivity" >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <RelativeLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/rGrop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/rb1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="谁看过我"
+                android:textColor="@color/main_tab_text_color" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="13dp"
+                android:layout_marginTop="13dp"
+                android:background="#E3E3E3"
+                android:visibility="visible" />
+
+            <RadioButton
+                android:id="@+id/rb2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:button="@null"
+                android:gravity="center"
+                android:text="我看过谁"
+                android:textColor="@color/main_tab_text_color" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/rGrop"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:weightSum="2" >
+
+            <FrameLayout
+                android:id="@+id/view_div1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_color" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/view_div2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:visibility="invisible" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/app_color" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="总浏览量:"
+            android:textColor="#3F3F3F" />
+
+        <TextView
+            android:id="@+id/tvAll"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="0"
+            android:textColor="#3F3F3F" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+       
+            android:text="今日览量:"
+            android:textColor="#3F3F3F" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:text="0"
+            android:textColor="#3F3F3F" />
+    </LinearLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.ListViewRecord
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/acyivity_bg"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.ListViewRecord>
+
+</LinearLayout>

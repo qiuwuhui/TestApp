@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#FFF">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.hyphenate.easeui.widget.EaseTitleBar
+                    android:id="@+id/title_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    hyphenate:titleBarTitle="消息"
+                    android:paddingTop="15dp"
+                    android:visibility="gone"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:id="@+id/list_banding"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFE9BB"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/Text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:gravity="center"
+                        android:text="点击绑定手机号，立即与设计师免费沟通"
+                        android:textColor="#FD6530" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/list_dianzan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ease_mm_xin_listitem"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_dianzan"
+                        android:layout_width="59dp"
+                        android:layout_height="78dp"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true" >
+
+                        <com.hyphenate.easeui.CircleImg_UI
+                            android:id="@+id/dzimage"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/con_icon_xxtsjqxzs_dz" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/dianzan_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ease_unread_count_bg"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/dianzan_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点赞"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black_deep"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/avatar_dianzan"
+                        android:layout_toEndOf="@+id/avatar_dianzan"
+                        android:layout_marginStart="15dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="59dp"
+                    android:background="@color/line" />
+
+                <RelativeLayout
+                    android:id="@+id/list_pingluen"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ease_mm_xin_listitem"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayout01"
+                        android:layout_width="59dp"
+                        android:layout_height="78dp"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true" >
+
+                        <com.hyphenate.easeui.CircleImg_UI
+                            android:id="@+id/CircleImg_UI01"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/con_icon_xxyxdpl_def" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/pinluen_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ease_unread_count_bg"
+                        android:gravity="center"
+                        android:text="30"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的评论"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/black_deep"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/RelativeLayout01"
+                        android:layout_toEndOf="@+id/RelativeLayout01"
+                        android:layout_marginStart="16dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="59dp"
+                    android:background="@color/acyivity_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/list_tongzhi"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ease_mm_xin_listitem"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/avatar_container"
+                        android:layout_width="59dp"
+                        android:layout_height="78dp"
+                        android:gravity="center"
+                        android:layout_alignParentLeft="true" >
+
+                        <com.hyphenate.easeui.CircleImg_UI
+                            android:id="@+id/avatar"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/con_icon_xxyxtts_def" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/message_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ease_unread_count_bg"
+                        android:gravity="center"
+                        android:text="5"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="系统通知"
+                        android:layout_marginLeft="16dp"
+                        android:textColor="@color/black_deep"
+                        android:textSize="15sp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/avatar_container"
+                        android:layout_toEndOf="@+id/avatar_container"
+                        android:layout_marginStart="16dp" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="59dp"
+                    android:background="@color/acyivity_bg" />
+
+                <RelativeLayout
+                    android:id="@+id/list_kefu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ease_mm_xin_listitem"
+                    android:gravity="center_vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/RelativeLayout03"
+                        android:layout_width="59dp"
+                        android:gravity="center"
+                        android:layout_height="78dp"
+                        android:layout_alignParentLeft="true" >
+
+                        <com.hyphenate.easeui.CircleImg_UI
+                            android:id="@+id/CircleImg_UI02"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginLeft="10dp"
+                            android:src="@drawable/con_icon_xxtsjqxzs_def" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/sheji_mun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ease_unread_count_bg"
+                        android:layout_marginLeft="14dp"
+                        android:textSize="12sp"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="11dp"
+                        android:visibility="gone"
+                        android:layout_alignParentEnd="true"/>
+
+                    <TextView
+                        android:id="@+id/sheji_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/sheji_mun"
+                        android:layout_alignBottom="@+id/sheji_mun"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="@color/list_itease_secondary_color"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="200dp"
+                        android:gravity="center"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/RelativeLayout03"
+                        android:layout_toEndOf="@+id/RelativeLayout03"
+                        android:layout_marginLeft="16dp">
+
+                        <TextView
+                            android:id="@+id/TextView05"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="设计圈小助手"
+                            android:textColor="@color/black_deep"
+                            android:textSize="15sp"
+                            android:gravity="center|left"
+                            android:layout_weight="1"/>
+
+                        <TextView
+                            android:id="@+id/sheji_xx"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:gravity="center|left"
+                            android:textColor="@color/list_itease_secondary_color"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/fl_error_item"
+                >
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="59dp"
+                android:background="@color/line" />
+
+            <com.hyphenate.easeui.widget.EaseConversationList
+                android:id="@+id/list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="0dp" />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

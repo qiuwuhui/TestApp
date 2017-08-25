@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:background="#EEEEEE"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/yuanjiao_layout1"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/redTips"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_hint" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:layout_gravity="center"
+                android:paddingLeft="5dp"
+                android:text="您的账号审核已通过"
+                android:textColor="#333333"
+                android:textSize="@dimen/text_size_small" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvConten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:textSize="11sp"
+            android:textColor="#8C8C96"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="这里显示未通过的原因，原因由后台编写发送信息，让偶就是说你个是说你额说你订单阿达十大按时大啊的是按时" />
+
+        <TextView
+            android:id="@+id/tvTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="8月15日   16:44:12"
+            android:textColor="#999999"
+            android:gravity="right"
+            android:paddingRight="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

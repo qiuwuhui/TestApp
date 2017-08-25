@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/zixun_tu"
+            android:layout_marginTop="10dp"
+            android:id="@+id/xuwei_im" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:id="@+id/ivIcon"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_morentxy"
+                ptr:border_colo="#EEEEEE"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/ivIcon"
+                android:singleLine="true"
+                android:text="444"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="+关注"
+        android:layout_width="40dip"
+        android:layout_height="18dip"
+        android:id="@+id/guanzhu_tv"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/app_color"
+        android:textSize="9dp"
+        android:gravity="center"
+        android:background="@drawable/yuanjiao_layout18" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="145dp"-->
+        <!--android:layout_height="82dp"-->
+        <!--android:background="@drawable/sheji_dashi">-->
+    <!--</RelativeLayout>-->
+
+</LinearLayout>

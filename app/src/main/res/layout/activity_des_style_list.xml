@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+    tools:context=".DesStyleListActivity" >
+
+    <include
+        android:id="@+id/setting_title"
+        layout="@layout/title_bar_text_back" />
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:layout_marginBottom="66dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_marginTop="64dp"
+        android:horizontalSpacing="10dp"
+        android:numColumns="4"
+        android:verticalSpacing="16dp" >
+    </GridView>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:visibility="gone" >
+    </ListView>
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_login_selector"
+        android:text="确定"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

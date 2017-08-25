@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".ZhuanxiuActivity" >
+
+    <RelativeLayout
+		        android:id="@+id/relativeLayout1"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentBottom="true"
+		        android:layout_alignParentLeft="true"
+		        android:background="#FFF" >
+
+		        <Button
+		            android:id="@+id/wanchen"
+		            android:layout_width="match_parent"
+		            android:layout_height="@dimen/y80"
+		            android:layout_marginBottom="3dp"
+		            android:layout_marginLeft="20dp"
+		            android:layout_marginRight="20dp"
+		            android:layout_marginTop="10dp"
+		            android:background="@drawable/con_button_dwsb_default"
+		            android:text="完成"
+		            android:textColor="#FFF"
+		            android:textSize="14sp" />
+		    </RelativeLayout>
+
+    <LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="@dimen/action_bar_height"
+android:background="#FFF"
+android:paddingTop="@dimen/action_bar_top_height" >
+
+<TextView
+android:id="@+id/TextView01"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:ellipsize="end"
+android:gravity="center"
+android:lines="1"
+android:paddingLeft="16dp"
+android:paddingRight="16dp"
+android:text="企业认证"
+android:textSize="18sp" />
+
+<ImageView
+android:id="@+id/back"
+android:layout_width="wrap_content"
+android:layout_height="match_parent"
+android:background="@drawable/select_item_bg"
+android:paddingLeft="10dp"
+android:paddingRight="10dp"
+android:src="@drawable/nav_button_fhan_default" />
+</RelativeLayout>
+
+<TextView
+android:id="@+id/textView1"
+android:layout_width="match_parent"
+android:layout_height="30dp"
+android:background="#8C8C96"
+android:gravity="center|left"
+android:paddingLeft="10dp"
+android:text="通过实名认证后将有机会将您推荐给业主"
+android:textSize="13sp"
+android:textColor="#FFF" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="40dp"
+android:background="#FFF" >
+
+<TextView
+android:id="@+id/TextView02"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginLeft="10dp"
+android:text="企业名称："
+android:textSize="14sp" />
+
+<EditText
+android:id="@+id/name_edit"
+android:layout_width="wrap_content"
+android:layout_height="30dp"
+android:layout_gravity="center"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="20dp"
+android:layout_weight="1"
+android:background="#FFF"
+android:ems="10"
+android:hint="两个字以上"
+android:textSize="14sp" >
+
+<requestFocus />
+</EditText>
+</LinearLayout>
+
+<include layout="@layout/line_horizontal_full" />
+
+<LinearLayout
+android:id="@+id/LinearLayout01"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:paddingLeft="16dp"
+android:paddingRight="16dp" >
+
+<TextView
+android:id="@+id/TextView06"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginRight="5dp"
+android:layout_marginTop="3dp"
+android:text="*"
+android:textColor="#FF6464"
+android:textSize="18sp" />
+
+<TextView
+android:layout_width="match_parent"
+android:layout_height="35dp"
+android:gravity="left|center"
+android:text="企业全称名字需与营业执照上的一致"
+android:textColor="@color/item_text_normal"
+android:textIsSelectable="true"
+android:textSize="12sp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:background="#FFF"
+android:orientation="vertical" >
+
+<TextView
+android:id="@+id/textView4"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginLeft="10dp"
+android:layout_marginTop="10dp"
+android:layout_marginBottom="10dp"
+android:text="营业执照： "
+/>
+
+<ImageView
+android:id="@+id/image_01"
+android:layout_width="match_parent"
+android:layout_height="@dimen/y310"
+android:layout_marginLeft="10dp"
+android:layout_marginRight="10dp"
+android:layout_marginBottom="10dp"
+android:scaleType="fitXY"
+android:background="@drawable/ionc_zhizhao" />
+</LinearLayout>
+
+</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="分享到"
+        android:textColor="#757575"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvShareWx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_wx"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="微信"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvShareqq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_qq"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="QQ"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvSharexl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_xl"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="微博"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvShareWxc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_wxc"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="朋友圈"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/tvShareqz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_qz"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="QQ空间"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:visibility="invisible">
+
+            <TextView
+                android:id="@+id/tvShareWxs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/select_item_bg"
+                android:drawablePadding="7dp"
+                android:drawableTop="@drawable/icon_share_wxs"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="微信收藏"
+                android:textColor="@color/app_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/line" />
+
+    <TextView
+        android:id="@+id/dismiss"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="@color/app_color"
+        android:textSize="16sp"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/line">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dip">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/designer_star"
+            android:layout_marginRight="6dp"
+            android:id="@+id/guan_img" />
+
+        <TextView
+        android:id="@+id/text_tv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#454545"
+        android:paddingTop="2dip"
+        android:clickable="false"
+        android:enabled="false"
+        android:textSize="12sp"
+        android:text="订单"
+        android:paddingBottom="2dip"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

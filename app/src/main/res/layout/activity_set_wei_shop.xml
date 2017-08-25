@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".SetWeiShopActivity" >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <GridView
+        android:id="@+id/gvWeishop"
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:horizontalSpacing="4dp"
+        android:verticalSpacing="8dp"
+        android:numColumns="3"
+        android:layout_height="match_parent" >
+    </GridView>
+
+</LinearLayout>

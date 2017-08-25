@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/itemCityqu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+        <GridView
+            android:id="@+id/gvCityqu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:horizontalSpacing="8dp"
+            android:minHeight="64dp"
+            android:numColumns="3"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:verticalSpacing="8dp">
+        </GridView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#EEE" />
+
+        <TextView
+            android:id="@+id/chengshi"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/trans_white"
+            android:drawableRight="@drawable/admin_next"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            
+            android:tag="-11"
+            android:text="查看全部" />
+    </LinearLayout>
+
+</RelativeLayout>

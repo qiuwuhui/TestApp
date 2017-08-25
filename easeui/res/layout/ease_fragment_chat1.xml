@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hyphenate.easeui.ui.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hyphenate="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:id="@+id/mRoot1"
+    android:background="#FFF" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:background="#FFF">
+
+        <RelativeLayout
+            android:id="@+id/left_layout"
+            android:layout_width="50dip"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ease_common_tab_bg"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/left_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/ease_back"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/right_layout"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ease_common_tab_bg" >
+
+            <ImageView
+                android:id="@+id/right_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/nav_button_zxkf_default"
+                android:scaleType="centerInside" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="设计圈小助手"
+            android:textColor="#000000"
+            android:paddingTop="@dimen/action_bar_top_height"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/input_menu"
+        android:layout_below="@id/title_bar1"
+        android:background="#f2f0ed" >
+
+        <com.hyphenate.easeui.widget.EaseChatMessageList
+            android:id="@+id/message_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.hyphenate.easeui.widget.EaseVoiceRecorderView
+            android:id="@+id/voice_recorder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <com.hyphenate.easeui.widget.EaseChatInputMenu
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+    <com.hyphenate.easeui.widget.EaseTitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingTop="13dp"
+        hyphenate:titleBarLeftImage="@drawable/ease_mm_title_back" 
+        android:visibility="gone">
+    </com.hyphenate.easeui.widget.EaseTitleBar>
+</com.hyphenate.easeui.ui.MyRelativeLayout>

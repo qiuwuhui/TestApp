@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/guidIV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/guid_bg3" />
+
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#00FFFFFF"
+        android:paddingBottom="@dimen/x100" >
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="170dp"
+        android:layout_height="35dp"
+        android:layout_above="@+id/frameLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/selector_red_gree_radu4"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:text="进入设计圈"
+        android:textColor="@color/app_color"
+        android:visibility="gone"
+        android:textSize="14sp" />
+
+</RelativeLayout>

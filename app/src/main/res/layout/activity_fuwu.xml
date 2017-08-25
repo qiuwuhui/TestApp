@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".FuwuActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="个人设置"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ibCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_home_call"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_title"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_anniuk"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/main_tab_text_color2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#8C8C96"
+        android:gravity="center|left"
+        android:paddingLeft="10dp"
+        android:text="服务区域，可多选."
+        android:textColor="#FFF"
+        android:textSize="13sp" />
+
+    <ListView
+        android:id="@+id/MyList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#00000000" 
+        >
+    </ListView>
+
+</LinearLayout>

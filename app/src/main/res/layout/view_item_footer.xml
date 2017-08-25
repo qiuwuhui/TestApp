@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="28dp"
+    android:background="@drawable/item_list"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.baolinetworktechnology.shejiquan.view.CircleImg
+        android:id="@+id/userLogo"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/login_user" />
+
+    <TextView
+        android:id="@+id/tv_user"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="4dp"
+        android:text="设计师"
+        android:textColor="@color/item_text_normal" />
+
+    <TextView
+        android:id="@+id/tv_bronws"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/ic_browse"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:minWidth="56dp"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_favorat"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableLeft="@drawable/ic_collection"
+        android:drawablePadding="4dp"
+        android:gravity="center_vertical"
+        android:minWidth="56dp"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/case_comment" />
+
+    <TextView
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="8dp"
+        android:drawablePadding="4dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:text="0"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+</LinearLayout>

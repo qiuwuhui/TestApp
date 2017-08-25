@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baolinetworktechnology.shejiquan.tongxunlu.SwipeItemLayoutListview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/con_item_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:bga_sil_bottomMode="pullOut"
+    app:bga_sil_springDistance="20dp"
+    app:bga_sil_swipeDirection="right">
+
+    <LinearLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout2">
+        <ImageView
+            android:id="@+id/img_delete"
+            android:background="@drawable/add_men_radio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/itemLay"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:layout_marginRight="15dp"
+                android:text="小户型这样设计，也能让你有衣帽间，小空间大容量"
+                android:id="@+id/Post_name" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="#666666"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="装修一整年终于毕业了！从装修菜鸟一路走来，翻阅了无 数装修日记贴，几乎每天当低头族，吃饭也不离手。终于 拯救了一套属于自己风格的房子......"
+                android:id="@+id/contents" />
+
+            <com.baolinetworktechnology.shejiquan.view.NineGridTestLayout
+                android:id="@+id/layout_nine_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:paddingTop="13dp">
+
+                <TextView
+                    android:text="243"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chakan"
+                    android:layout_weight="1"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/cha_kan_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:text="150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pinluen"
+                    android:layout_weight="1"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/oin_luen_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:text="366"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dianzan"
+                    android:layout_weight="1"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/dian_zan_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10分钟前"
+                    android:layout_weight="1"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:id="@+id/tiem_post"
+                    android:visibility="gone"/>
+            </LinearLayout>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="0.5dp"
+            android:background="@color/line" />
+    </LinearLayout>
+
+</com.baolinetworktechnology.shejiquan.tongxunlu.SwipeItemLayoutListview>

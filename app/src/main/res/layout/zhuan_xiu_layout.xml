@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/white">
+
+    <include layout="@layout/title_bar_back_serch1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#FFF"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:button="@drawable/rb_bg_oval"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:gravity="center"
+                android:lines="1"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:text="公装空间 "
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="@dimen/text_size_title" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/view_line" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:button="@drawable/rb_bg_oval"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:ellipsize="marquee"
+                android:gravity="center"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:scrollHorizontally="true"
+                android:singleLine="true"
+                android:text="热门排序 "
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="@dimen/text_size_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EEEEEE" />
+
+    <LinearLayout
+        android:id="@+id/dingwei"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y60"
+        android:background="#EEEEEE" >
+
+        <TextView
+            android:id="@+id/weizhi_str"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="4.78"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#8C8C96"
+            android:text="当前位置：厦门市思明区环岛干道靠近厦门青年网络..." />
+
+        <ImageView
+            android:id="@+id/shuaxin_img"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y40"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:src="@drawable/con_button_sx_default" />
+    </LinearLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listViewCase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" />
+
+</LinearLayout>

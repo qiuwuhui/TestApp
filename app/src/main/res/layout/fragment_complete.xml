@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mooRet"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CompleteFragment" >
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="#00000000"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+
+    <RelativeLayout
+        android:id="@+id/No_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_wfbal" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="暂时还未有评论" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/item_pingluen"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#EEEEEE"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/etComments"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y70"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="2.78"
+            android:hint="说点什么吧..."
+            android:background="@drawable/menu_icon_xsrk_default"
+            android:textSize="13sp"
+            android:paddingLeft="5dp"
+            android:textColor="#8C8C96" >
+
+            <requestFocus />
+        </EditText>
+
+        <Button
+            android:id="@+id/ic_send"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/y70"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.6"
+            android:background="@drawable/selector_red_gree_radu5"
+            android:text="发送"
+            android:textColor="#3C3C46"
+            android:textSize="13sp" />
+    </LinearLayout>
+</RelativeLayout>

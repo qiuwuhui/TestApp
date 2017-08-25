@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="60dp"
+        android:background="#FFF"
+        android:clipChildren="false"
+        android:orientation="horizontal" >
+
+        <com.baolinetworktechnology.shejiquan.view.CircleImg
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/userLogo"
+            android:layout_width="62dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            android:src="@drawable/xiaotu"
+            ptr:border_colo="#80EEEEEE"
+            ptr:border_widt="2dp" />
+
+        <LinearLayout
+            android:id="@+id/itemWei"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="4dp" >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="2dp" >
+
+                <TextView
+                    android:id="@+id/tv_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="设计师"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/tvNumCase"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="作品：13"
+                        android:textColor="@color/item_text_normal2"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/tvNumFans"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="16dp"
+                        android:gravity="center_vertical"
+                        android:text="粉丝：5"
+                        android:textColor="@color/item_text_normal2"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="4dp" >
+
+                <ImageView
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/default_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="微名片"
+                    android:textColor="@color/text_normal"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

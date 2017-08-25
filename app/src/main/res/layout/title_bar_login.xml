@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:paddingTop="@dimen/action_bar_top_height"
+    android:background="#FFFFFF" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_item_bg"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:scaleType="center"
+        android:src="@drawable/nav_button_fhan_default" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:text="手机号绑定"
+        android:textSize="18sp"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:id="@+id/title_reginer"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:visibility="gone"
+        android:background="@drawable/select_item_bg"
+        android:paddingRight="16dp"
+        android:text="注册"
+        android:textSize="15sp" />
+
+</RelativeLayout>

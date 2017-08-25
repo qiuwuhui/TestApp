@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--画一个边线，四个边框只有上面没有边框-->
+<inset
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:insetTop="-3dp"
+        android:insetLeft="-3dp"
+        android:insetRight="-3dp">
+    <!--形状-->
+    <shape android:shape="rectangle">
+        <!--填充颜色-->
+        <solid android:color="#FFF"></solid>
+        <!--描边-->
+        <stroke android:width="3.0dip" android:color="#FD6530"></stroke>
+        <!--paddint-->
+        <padding android:left="0dp" android:right="0dp" android:top="0dp" android:bottom="0dp"></padding>
+        <!--圆角-->
+        <corners android:radius="0dp"/>
+    </shape>
+</inset>

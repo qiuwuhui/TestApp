@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="subscribe_activity_bg">#ffefefef</color>
+    <color name="default_text">#ff454545</color>
+    <color name="default_text_night">#ff747474</color>
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
+    <color name="subscribe_item_drag_bg">#fff5f5f5</color>
+    <color name="subscribe_item_drag_stroke_night">#ff464646</color>
+    <color name="subscribe_item_drag_bg_night">#ff252525</color>
+    <color name="subscribe_item_selected_bg">#ffffffff</color>
+    <color name="subscribe_item_selected_stroke">#FD6530</color>
+    <color name="subscribe_item_disabled_bg">#ffefefef</color>
+    <color name="subscribe_item_disabled_stroke">#ffd9d9d9</color>
+    <color name="subscribe_item_pressed_bg">#fff9f9f9</color>
+    <color name="subscribe_item_pressed_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_normal_bg">#fff5f5f5</color>
+    <color name="subscribe_item_normal_stroke">#ffcdcdcd</color>
+    <color name="subscribe_item_focused_bg_night">#ff252525</color>
+    <color name="subscribe_item_focused_stroke_night">#ff464646</color>
+    <color name="subscribe_item_selected_bg_night">#FD6530</color>
+    <color name="subscribe_item_selected_stroke_night">#FD6530</color>
+    <color name="subscribe_item_disabled_bg_night">#ff2b2b2b</color>
+    <color name="subscribe_item_text_color_pressed_night">#ff303030</color>
+    <color name="subscribe_item_text_color_pressed">#ffb9b9b9</color>
+    <color name="subscribe_item">#66000000</color>
+    <item name="subscribe_item_text_color_normal" type="color">@color/default_text</item>
+    <item name="subscribe_item_text_color_normal_night" type="color">@color/default_text_night</item>
+
+    <color name="navig_text_normal">#A8A8A8</color>
+    <color name="navig_text_pressed">#FD6530</color>
+    <color name="navig_text_color">#FD6530</color>
+    <color name="trans">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="alertdialog_line">#c6c6c6</color>
+    <color name="actionsheet_blue">#037BFF</color>
+    <color name="actionsheet_red">#FD6530</color>
+    <color name="actionsheet_gray">#8F8F8F</color>
+    <color name="line">#eeeeee</color>
+</resources>

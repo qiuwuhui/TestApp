@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:id="@+id/shequ_loge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_icon"
+                app:border_colo="#00000000"
+                app:border_widt="0.5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="杰伦"
+                android:textColor="@android:color/holo_blue_dark"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="翻着我们的照片，想念若隐若现，去年的冬天，我们笑得很甜......\n—— 哎哟，不错哦!" />
+
+        <com.baolinetworktechnology.shejiquan.view.NineGridTestLayout
+            android:id="@+id/layout_nine_grid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:text="查看"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView17"
+                    android:layout_weight="1"
+                     />
+
+                <TextView
+                    android:text="点赞"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView16"
+                    android:layout_weight="1"
+                   />
+
+                <TextView
+                    android:text="评论"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView15"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10分钟前"
+                    android:layout_weight="1"
+                    android:gravity="right" />
+            </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@color/acyivity_bg"
+        android:id="@+id/textView27" />
+</LinearLayout>

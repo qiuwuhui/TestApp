@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_release"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.ReleaseActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#FFF" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_item_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/nav_button_fhan_default" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="发帖子"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_title2"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_title"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/yuanjiao_layout9"
+                android:gravity="center"
+                android:text="发布"
+                android:textColor="@color/shouqi"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+                android:id="@+id/etitText"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="10"
+                android:gravity="top"
+                android:hint="标题（至少4个字）"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColorHint="#999999"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="18dp"
+                android:background="@color/line" />
+
+            <EditText
+                android:id="@+id/etitConten"
+                style="@style/EditTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:ems="20"
+                android:gravity="top"
+                android:hint="分享设计新生活..."
+                android:maxLines="10"
+                android:minLines="7"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+            <GridView
+                android:id="@+id/publishImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginLeft="15dip"
+                android:layout_marginRight="15dip"
+                android:layout_marginTop="10dip"
+                android:horizontalSpacing="10dip"
+                android:numColumns="auto_fit"
+                android:columnWidth="68dip"
+                android:verticalSpacing="10dip" >
+            </GridView>
+        </LinearLayout>
+</LinearLayout>

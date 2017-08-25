@@ -1,0 +1,432 @@
+<com.baolinetworktechnology.shejiquan.view.MyLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mRoot1"
+    android:background="@color/line"
+    android:orientation="vertical"
+    tools:context=".OwnerDetailInfoActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:background="#FFF" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的资料"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/TextView02"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/yuanjiao_layout8"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/main_tab_text_color2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/acyivity_bg" >
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/item_head"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="头像"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <com.baolinetworktechnology.shejiquan.view.CircleImg
+                    android:id="@+id/userHead"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/ib_next"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/xiaotu"
+                    android:visibility="visible" />
+
+                <ImageView
+                    android:id="@+id/ib_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="昵称"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/admin_next" />
+
+                <com.guojisheng.koyview.MyEditText
+                    android:id="@+id/myeUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/imageView1"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="14sp" >
+
+                    <requestFocus />
+                </com.guojisheng.koyview.MyEditText>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:id="@+id/item_sex"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="性别"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tvUserSex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/admin_next"
+                    android:gravity="right"
+                    android:hint="请填写"
+                    android:textColor="@drawable/selector_item_text_color" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+
+            <TextView
+                android:text="我的装修资料"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="16sp" />
+            <RelativeLayout
+                android:id="@+id/Zhuan_city"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="城市"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/ZhuanUserCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/admin_next"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:textColor="@drawable/selector_item_text_color" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+            <RelativeLayout
+                android:id="@+id/item_huxing"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="家居户型"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_huxing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/admin_next"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:textColor="@drawable/selector_item_text_color" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+            <RelativeLayout
+                android:id="@+id/love_Stye"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="喜欢的风格"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_liveStye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="8dp"
+                    android:drawableRight="@drawable/admin_next"
+                    android:gravity="right"
+                    android:hint="请选择"
+                    android:textColor="@drawable/selector_item_text_color" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="房屋面积"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="㎡" />
+
+                <com.guojisheng.koyview.MyEditText
+                    android:id="@+id/myMianji"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/imageView3"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:ems="10"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写您的房屋面积"
+                    android:textColorHint="@color/item_text_normal"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="14sp" >
+
+                    <requestFocus />
+                </com.guojisheng.koyview.MyEditText>
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.25dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@color/line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@drawable/item_list"
+                android:gravity="center_vertical"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="预算"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="万元" />
+
+                <com.guojisheng.koyview.MyEditText
+                    android:id="@+id/myYusuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="8dp"
+                    android:layout_toLeftOf="@+id/imageView2"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:inputType="number"
+                    android:digits="0123456789."
+                    android:ems="10"
+                    android:gravity="right|center_vertical"
+                    android:hint="请填写您的装修预算"
+                    android:textColorHint="@color/item_text_normal"
+                    android:maxLength="20"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="14sp" >
+                    <requestFocus />
+                </com.guojisheng.koyview.MyEditText>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</com.baolinetworktechnology.shejiquan.view.MyLinearLayout>

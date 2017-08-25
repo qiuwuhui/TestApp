@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp" >
+
+    <com.baolinetworktechnology.shejiquan.view.CircleImg
+        android:id="@+id/cricleLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_grsmrz" />
+
+    <RelativeLayout
+        android:id="@+id/linearName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_weight="1"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tvUserName"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivHonor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvUserName"
+            android:layout_alignTop="@id/tvUserName"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/tvUserName"
+            android:src="@drawable/weishop_admin_honor" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tvUserName"
+            android:layout_alignTop="@id/tvUserName"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/ivHonor"
+            android:src="@drawable/grade"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tvPost"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:shadowRadius="2"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvFromCity"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:shadowRadius="2"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvWorkYear"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUserName"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/tvFromCity"
+            android:gravity="center"
+            android:shadowRadius="2"
+            android:textColor="#FFF"
+            android:textSize="13sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv2Code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/micro_menu_code" />
+
+</LinearLayout>

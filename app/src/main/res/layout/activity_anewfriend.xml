@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_anewfriend"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.AnewfriendActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:id="@+id/Gofor"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_top_height"
+            android:paddingTop="@dimen/action_bar_top_height1"
+            android:background="@color/app_top_color"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:text="新的朋友"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="14dp"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:id="@+id/textView5" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/line"
+            android:visibility="gone">
+
+            <com.baolinetworktechnology.shejiquan.view.IconCenterEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                style="@style/editTextStyle"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="5dip" />
+        </RelativeLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id = "@+id/MyRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+        </android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+</RelativeLayout>

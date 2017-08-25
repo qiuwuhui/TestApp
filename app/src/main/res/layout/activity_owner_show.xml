@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_owner_show"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@color/line"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.OwnerShowActivity">
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listViewOwner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="0dp"
+        android:focusable="true"
+        android:numColumns="2"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text">
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:id="@+id/include">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_back" />
+        <TextView
+            android:id="@+id/tv_chent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="企业认证"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

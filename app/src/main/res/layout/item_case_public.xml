@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="10dp"
+        android:background="#EEEEEE" />
+
+    <com.baolinetworktechnology.shejiquan.RoundRecImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/opus_height"
+        android:src="@drawable/icon_defult"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_list"
+        android:padding="8dp" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="测试标题"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_title" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4dp"
+            android:singleLine="true"
+            android:text="空间类型|几图"
+            android:textColor="#ABABAB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_favorat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="4dp"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ABABAB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/tv_favorat"
+            android:drawableLeft="@drawable/ws3_opus_mess"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ABABAB"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_hist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@id/tv_comment"
+            android:drawableLeft="@drawable/ws2_news_eye"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#ABABAB"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

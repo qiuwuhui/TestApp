@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list"
+    android:orientation="vertical"
+    android:layout_marginTop="8dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" >
+
+        <com.baolinetworktechnology.shejiquan.view.CircleImg
+            android:id="@+id/designer_iv_head"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/xiaotu"
+            ptr:border_colo="#F5F5F5"
+            ptr:border_widt="3dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@id/designer_iv_head"
+            android:gravity="center_vertical" >
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLength="10"
+                android:text="设计师"
+                android:textColor="#262626"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/ivHonor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tvName"
+                android:layout_alignTop="@id/tvName"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/tvName"
+                android:src="@drawable/weishop_admin_honor"
+                android:visibility="gone"/>
+
+            <ImageView
+                android:id="@+id/ivGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/ivHonor"
+                android:layout_alignTop="@id/ivHonor"
+                android:layout_marginLeft="6dp"
+                android:layout_toRightOf="@id/ivHonor"
+                android:src="@drawable/grade"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvFromCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvName"
+                android:layout_marginTop="4dp"
+                android:drawablePadding="4dp"
+                android:gravity="bottom"
+                android:singleLine="true"
+                android:text="省-城市"
+                android:textColor="#8C8C96"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/il"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvFromCity"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal"
+                android:paddingBottom="4dp" >
+
+                <TextView
+                    android:id="@+id/tvNumOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="擅长风格：中式、现代、欧式"
+                    android:layout_marginRight="16dp"
+                    android:textColor="#8C8C96"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/il"
+                android:gravity="center"
+                android:text="费用"
+                android:textColor="@color/app_color"
+                android:layout_toRightOf="@+id/tvFromCity"
+                android:layout_marginLeft="20dp"
+
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginBottom="8dp"
+        android:maxLength="50"
+        android:id="@+id/tvdesigning"
+        android:visibility="gone"/>
+</LinearLayout>

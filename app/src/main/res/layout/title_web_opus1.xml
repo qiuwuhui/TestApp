@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@drawable/web_opus_title"
+    android:paddingTop="@dimen/action_bar_top_height" >
+
+    <View
+        android:id="@+id/titleBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_item_bg"
+        android:paddingLeft="15dp"
+        android:paddingRight="14dp"
+        android:src="@drawable/nav_back" />
+
+    <ImageView
+        android:id="@+id/share"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/select_item_bg"
+        android:paddingLeft="14dp"
+        android:paddingRight="15dp"
+        android:visibility="invisible"
+        android:src="@drawable/detail_share" />
+
+    <CheckBox
+        android:id="@+id/collect"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/rb_bg_oval"
+        android:button="@drawable/nav_fav"
+        android:gravity="center"
+        android:minWidth="30dp"
+        android:paddingLeft="8dp" />
+
+</RelativeLayout>

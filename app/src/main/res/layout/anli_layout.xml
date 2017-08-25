@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/al_userLogo"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/opus_height"
+            android:src="@drawable/zixun_tu"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/al_name"
+            android:layout_width="@dimen/x600"
+            android:layout_height="wrap_content"
+            android:text="地中海风格有什么特点 地中海风格装修攻略"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" >
+
+            <TextView
+                android:id="@+id/al_zhajia"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:text="风格|户型|面积|造价"
+                android:textColor="@color/item_text_normal3"/>
+
+            <TextView
+                android:id="@+id/al_type"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_weight="0.33"
+                android:gravity="right"
+                android:textColor="@color/item_text_normal3"
+                android:text="收藏:0" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/acyivity_bg" />
+
+    </LinearLayout>
+
+</RelativeLayout>

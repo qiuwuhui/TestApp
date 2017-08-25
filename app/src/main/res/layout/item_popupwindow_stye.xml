@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_transparent" >
+
+    <LinearLayout
+        android:id="@+id/ll_popup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:text="请选择你擅长的风格 (至多4项)："
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center|left"
+            android:layout_marginLeft="15dp"
+            android:textSize="13sp"
+            android:textColor="@color/color_my_text"
+            android:id="@+id/text_sc" />
+
+        <com.baolinetworktechnology.shejiquan.view.MyGridView
+            android:id="@+id/Stye_GridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:numColumns="3" >
+        </com.baolinetworktechnology.shejiquan.view.MyGridView>
+
+
+        <RelativeLayout
+            android:id="@+id/lin_gong"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:id="@+id/item_popupwindows_Photo"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/stye_shape"
+                android:textColor="@color/app_color"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:text="确定"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:orientation="horizontal"
+            android:background="#F7F7F7">
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

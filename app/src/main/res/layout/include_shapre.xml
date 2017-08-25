@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="24dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:visibility="visible" >
+
+    <Button
+        android:id="@+id/shareWeChat"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_bg"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/icon_share_wx"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="微信好友"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/shareQQ"
+        android:layout_width="67dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_bg"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/icon_share_wxc"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="微信朋友圈"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/shareXinLang"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_bg"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/icon_share_xl"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="新浪微博"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/shareMore"
+        android:layout_width="66dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/select_item_bg"
+        android:drawablePadding="8dp"
+        android:drawableTop="@drawable/share_more"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="更多"
+        android:textColor="@color/item_text_normal"
+        android:textSize="13sp" />
+
+</LinearLayout>

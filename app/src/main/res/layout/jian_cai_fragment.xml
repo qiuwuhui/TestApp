@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/No_layout"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:text="设计师还没有任何推荐品牌!" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/icon_my_post"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="48dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ry_lay"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="—  推荐品牌  —"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/textView37" />
+
+        <com.baolinetworktechnology.shejiquan.view.MyGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ry_gridview"
+            android:numColumns="2"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="15dp">
+        </com.baolinetworktechnology.shejiquan.view.MyGridView>
+
+        <TextView
+            android:text="没有更多了..."
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/not_Tv"
+            android:textColor="#C8C8C8"
+            android:gravity="center"
+            android:background="#EEEEEE"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/buyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- mdpi -->
+    <dimen name="item_more_image_height">120dp</dimen>
+    <!--  -->
+    <dimen name="item_height">35dp</dimen>
+    <dimen name="my_top_height">160dp</dimen>
+    
+    <dimen name="my_top_sjheight">151dp</dimen>
+    <dimen name="my_top_zxheight">143dp</dimen>
+    
+    <dimen name="my_logo_height">56dp</dimen>
+    <dimen name="image_w">72dp</dimen>
+    <!-- sp -->
+    <dimen name="text_size_small">14sp</dimen>
+
+</resources>

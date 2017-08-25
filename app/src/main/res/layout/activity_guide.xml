@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuideActivity" >
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        >
+    </android.support.v4.view.ViewPager>
+
+    <RadioGroup
+        android:id="@+id/ll_pager_point_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"	
+            android:checked="true"
+            android:clickable="false"
+            android:drawableLeft="@drawable/radio_guide_selector" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/radio_guide_selector"
+            android:paddingLeft="8dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/radio_guide_selector"
+            android:paddingLeft="8dp" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/ll_pager_point_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/selector_red_gree_radu4"
+        android:text="进入设计圈" 
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:textColor="@color/app_color"/>
+
+</RelativeLayout>

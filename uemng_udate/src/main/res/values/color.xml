@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="endColor">#FE5761</color>
+    <color name="startColor">#FE1622</color>
+    <color name="button_frost">#5FE0DEDD</color>
+
+</resources>

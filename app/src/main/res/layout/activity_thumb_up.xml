@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_thumb_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.ThumbUpActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="收到点赞"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/viewLay"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"
+        android:layout_below="@+id/relativeLayout1"/>
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listThumd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/viewLay"
+        android:divider="@color/line"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+
+
+</RelativeLayout>

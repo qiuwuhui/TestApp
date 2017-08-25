@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="#FFF"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/action_bar_top_height" >
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@drawable/select_item_bg"
+        android:paddingLeft="12dp"
+        android:paddingRight="4dp"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/nav_button_fhan_default" />
+
+    <com.guojisheng.koyview.MyEditText
+        android:id="@+id/myEditText"
+        style="@style/EditTextStyle"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:background="@drawable/serch_shape_edit"
+        android:drawableLeft="@drawable/home_nav_icon_fdj_default"
+        android:hint="搜索作品、设计师、资讯"
+        android:imeOptions="actionSearch"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true"
+        android:textColorHint="#B8B8B8"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/title_serch"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:text="搜索"
+        android:textColor="@color/main_tab_text_color2"
+        android:textSize="15sp"
+        android:background="@drawable/yuanjiao_layout8"
+        android:visibility="visible" />
+</LinearLayout>

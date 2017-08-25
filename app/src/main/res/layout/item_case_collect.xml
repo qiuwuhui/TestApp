@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <com.baolinetworktechnology.shejiquan.RoundRecImageView
+        android:id="@+id/iv_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/opus_height"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/icon_defult"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/item_list"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="空间类型|几图"
+            android:textColor="#ABABAB"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_favorat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="收藏  0"
+            android:textColor="#ABABAB"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/llayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_radu_red_null"
+            android:gravity="center"
+            android:minWidth="70dp"
+            android:orientation="vertical"
+            android:padding="5dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="造价"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvCost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textColor="@color/app_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@id/llayout"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="测试标题"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_title" />
+    </RelativeLayout>
+
+</LinearLayout>

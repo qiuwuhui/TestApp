@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/anli_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/opus_height"
+            android:src="@drawable/zixun_tu"
+            android:layout_margin="10dp"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ren_zhen_dai"
+                android:id="@+id/anli_zt"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:id="@+id/al_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:text="地中海风格有什么特点 地中海风格装修攻略"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal" >
+              <TextView
+                  android:id="@+id/hitsTv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="8dp"
+                  android:text="阅读: 888"
+                  android:textSize="13sp"
+                  android:textColor="#8C8C96" />
+            <TextView
+                android:id="@+id/numCommentTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="评论: 888"
+                android:textSize="13sp"
+                android:textColor="#8C8C96" />
+            <TextView
+                android:id="@+id/numFavoriteTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="8dp"
+                android:text="收藏: 888"
+                android:textSize="13sp"
+                android:textColor="#8C8C96" />
+            <TextView
+                android:id="@+id/shareTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:text="被分享: 888"
+                android:textSize="13sp"
+                android:textColor="#8C8C96" />
+
+        </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/acyivity_bg" />
+</LinearLayout>

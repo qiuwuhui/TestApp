@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_wei"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.WeiActivity">
+
+    <include layout="@layout/title_wei_opus"
+        android:id="@+id/include"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include">
+    </android.support.v4.view.ViewPager>
+    <RelativeLayout
+        android:id="@+id/yingdao"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/norlay"
+            android:background="#99000000" >
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/yd_she_ji"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="47dp"
+                android:layout_marginStart="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/norlay"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.57"
+                android:background="#99000000" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

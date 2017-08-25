@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_radiu_white_null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="装修状态"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF575F" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+
+        <RadioGroup
+            android:id="@+id/dialogRg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/dialog1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="还没买房"
+                android:tag="1"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+
+            <RadioButton
+                android:id="@+id/dialog2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="还没交房"
+                android:tag="2"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+
+            <RadioButton
+                android:id="@+id/dialog3"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="准备开始装修"
+                android:tag="3"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+            <RadioButton
+                android:id="@+id/dialog4"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="装修进行中"
+                android:tag="4"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+
+            <RadioButton
+                android:id="@+id/dialog5"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:tag="5"
+                android:text="装修完成"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+
+            <RadioButton
+                android:id="@+id/dialog6"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:tag="6"
+                android:text="已入住新房"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+             <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#CCCCCC" />
+
+            <RadioButton
+                android:id="@+id/dialog7"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/item_list"
+                android:button="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="老房准备改造"
+                android:tag="7"
+                android:textColor="@drawable/selector_btn_text2"
+                android:textSize="16sp" />
+        </RadioGroup>
+    </ScrollView>
+
+</LinearLayout>

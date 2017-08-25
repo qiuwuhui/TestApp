@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    android:orientation="vertical" >
+    <com.baolinetworktechnology.shejiquan.view.NewsListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/newsListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.NewsListView>
+
+</RelativeLayout>

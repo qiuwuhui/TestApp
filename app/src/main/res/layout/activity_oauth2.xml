@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+    tools:context=".OAuth2Activity" >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <com.guojisheng.koyview.MyEditText
+            android:id="@+id/et_phone"
+            style="@style/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/home_con_icon_dlan_default"
+            android:ems="10"
+            android:hint="手机号"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:paddingLeft="10dp" >
+
+            <requestFocus />
+        </com.guojisheng.koyview.MyEditText>
+
+        <com.guojisheng.koyview.MyEditText
+            android:id="@+id/et_password"
+            style="@style/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/home_con_icon_dlan_default"
+            android:ems="10"
+            android:hint="请输入密码"
+            android:imeOptions="actionNext"
+            android:inputType="textPassword"
+            android:paddingLeft="10dp"
+            android:paddingRight="40dp" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/button_an_press"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:background="@drawable/item_list"
+    android:padding="8dp" >
+
+    <com.baolinetworktechnology.shejiquan.view.CircleImg
+        android:id="@+id/designer_iv_head"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:src="@drawable/default_icon"
+        ptr:border_colo="#EEE"
+        ptr:border_widt="2dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/designer_iv_head"
+        android:ellipsize="end"
+        android:maxLength="6"
+        android:singleLine="true"
+        android:text="设计师"
+        android:textColor="#262626"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/ivHonor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvName"
+        android:layout_alignTop="@id/tvName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/tvName"
+        android:src="@drawable/weishop_admin_honor" />
+
+    <ImageView
+        android:id="@+id/ivGarad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvName"
+        android:layout_alignTop="@id/tvName"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@id/ivHonor"
+        android:src="@drawable/grade"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvProfession"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tvName"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/tvName"
+        android:gravity="center_vertical"
+        android:maxLength="7"
+        android:singleLine="true"
+        android:textColor="#8b8b8b" />
+
+    <TextView
+        android:id="@+id/tvFromCity"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@id/designer_iv_head"
+        android:drawableLeft="@drawable/locationx"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:maxLength="12"
+        android:singleLine="true"
+        android:text="省份-城市"
+        android:textColor="#787878" />
+
+
+</RelativeLayout>

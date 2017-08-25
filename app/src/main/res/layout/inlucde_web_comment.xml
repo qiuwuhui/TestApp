@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_alignParentBottom="true"
+    android:background="#474747"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/item_design"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/select_color_red"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/bottom_design"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="委托设计"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/item_comment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/bottom_message"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="评论(0)"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</LinearLayout>

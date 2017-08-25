@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="action_bar_top_height">24dp</dimen>
+    <dimen name="action_bar_height">72dp</dimen>
+</resources>

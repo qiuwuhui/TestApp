@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@drawable/shape_radiu_white_null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="请选择区域"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF575F" />
+
+    <com.baolinetworktechnology.shejiquan.view.CityPicker2
+        android:id="@+id/cp_publish_select"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="104dp"
+            android:layout_height="46dp"
+            android:background="@drawable/shape_radiu_gray"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="取消"
+            android:textColor="#A7A7A7" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="104dp"
+            android:layout_height="46dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/btn_login_selector"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="确定"
+            android:textColor="#FFF" />
+    </RelativeLayout>
+
+</LinearLayout>

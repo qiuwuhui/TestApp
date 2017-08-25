@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:background="@color/app_title_bg"
+    android:paddingTop="@dimen/action_bar_top_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/nav_back" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RadioButton
+                android:id="@+id/rbCass"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_selector_red_white_l"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="案例"
+                android:textColor="@drawable/selector_red_white"
+                android:textSize="15sp" />
+
+            <RadioButton
+                android:id="@+id/rbNew"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/shape_selector_red_white_r"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="博文 "
+                android:textColor="@drawable/selector_red_white"
+                android:textSize="15sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="我的订单"
+            android:visibility="gone"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ibCall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_home_call"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/title_search"
+            android:text="编辑"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</FrameLayout>

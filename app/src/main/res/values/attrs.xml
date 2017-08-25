@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RatioImageView">
+        <attr name="ratio" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="NineGridLayout">
+        <attr name="sapcing" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleLayout">
+        <attr name="radius" format="dimension" />
+        <attr name="offset" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">  
+       <attr name="border_width2" format="dimension" />  
+       <attr name="border_color2" format="color" />  
+       <attr name="border_overlay" format="boolean" />  
+   </declare-styleable>
+
+  <declare-styleable name="Circleview">
+     <attr name="border_widt" format="dimension" />
+     <attr name="border_colo" format="color" />
+  </declare-styleable>
+
+    <declare-styleable name="ImgListView">
+        <attr name="headimage" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="TagGroup">
+        <!-- Whether the tag group is in append mode. -->
+        <attr name="atg_isAppendMode" format="boolean" />
+        <!-- If the tag group is in append mode, what the hint of input tag. -->
+        <attr name="atg_inputHint" format="string" />
+
+        <!-- The tag view outline border color. -->
+        <attr name="atg_borderColor" format="color" />
+        <!-- The tag view text color. -->
+        <attr name="atg_textColor" format="color" />
+        <!-- The tag view background color. -->
+        <attr name="atg_backgroundColor" format="color" />
+
+        <!-- The dash outline border color, when in append mode. -->
+        <attr name="atg_dashBorderColor" format="color" />
+        <!-- The input tag hint text color, when in append mode. -->
+        <attr name="atg_inputHintColor" format="color" />
+        <!-- The input tag type text color, when in append mode. -->
+        <attr name="atg_inputTextColor" format="color" />
+
+        <!-- The checked tag view outline border color. -->
+        <attr name="atg_checkedBorderColor" format="color" />
+        <!-- The checked text color. -->
+        <attr name="atg_checkedTextColor" format="color" />
+        <!-- The checked marker color. -->
+        <attr name="atg_checkedMarkerColor" format="color" />
+        <!-- The checked tag view background color. -->
+        <attr name="atg_checkedBackgroundColor" format="color" />
+
+        <!-- The tag view background color, when the tag view is being pressed. -->
+        <attr name="atg_pressedBackgroundColor" format="color" />
+
+        <!-- The tag view outline border stroke width. -->
+        <attr name="atg_borderStrokeWidth" format="dimension" />
+        <!-- The tag view text size. -->
+        <attr name="atg_textSize" format="dimension" />
+        <attr name="atg_horizontalSpacing" format="dimension" />
+        <attr name="atg_verticalSpacing" format="dimension" />
+        <attr name="atg_horizontalPadding" format="dimension" />
+        <attr name="atg_verticalPadding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="Themes">
+        <attr name="tagGroupStyle" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="EdgeSize" format="dimension" />
+        <attr name="EdgeFlag" format="enum" />
+        <attr name="ShadowLeft" format="reference" />
+        <attr name="ShadowRight" format="reference" />
+        <attr name="ShadowBottom" format="reference" />
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference" />
+
+    <declare-styleable name="NumberPicker">
+        <attr name="normalTextColor" format="color" />
+        <attr name="normalTextSize" format="dimension" />
+        <attr name="selecredTextColor" format="color" />
+        <attr name="selecredTextSize" format="dimension" />
+        <attr name="unitHight" format="dimension" />
+        <attr name="itemNumber" format="integer" />
+        <attr name="lineColor" format="color" />
+        <attr name="maskHight" format="dimension" />
+        <attr name="noEmpty" format="boolean" />
+        <attr name="isEnable" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="TextSwitchView">
+        <attr name="textSize" format="dimension"></attr>
+        <attr name="textColor" format="color"></attr>
+    </declare-styleable>
+    <declare-styleable name="PowerImageView">
+        <attr name="auto_play" format="boolean"></attr>
+    </declare-styleable>
+    <declare-styleable name="BGASwipeItemLayout">
+        <attr name="bga_sil_swipeDirection" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+        </attr>
+        <attr name="bga_sil_bottomMode" format="enum">
+            <enum name="pullOut" value="0" />
+            <enum name="layDown" value="1" />
+        </attr>
+        <attr name="bga_sil_springDistance" format="dimension" />
+        <attr name="bga_sil_swipeAble" format="boolean" />
+    </declare-styleable>
+</resources>

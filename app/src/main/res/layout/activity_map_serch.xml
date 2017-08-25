@@ -1,0 +1,59 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE"
+    tools:context=".MapSerchActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="#FFF"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="12dp"
+            android:paddingRight="4dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <com.guojisheng.koyview.MyEditText
+            android:id="@+id/myEditText"
+            style="@style/EditTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@drawable/home_nav_icon_ssk_default"
+            android:drawableLeft="@drawable/ic_serch_city"
+            android:hint="搜索位置信息"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColorHint="#999999"
+            android:layout_marginRight="16dp"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/acyivity_bg" />
+
+    <ListView
+        android:id="@+id/historyListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp" >
+    </ListView>
+
+</LinearLayout>

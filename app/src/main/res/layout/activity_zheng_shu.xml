@@ -1,0 +1,51 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:orientation="vertical"
+    tools:context=".ZhengShuActivity" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="#FFF"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <View
+            android:id="@+id/title_view"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#EEEEEE" />
+
+        <TextView
+            android:id="@+id/tite_name"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="资质证书"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/MyZhenshu"
+        android:layout_width="match_parent"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

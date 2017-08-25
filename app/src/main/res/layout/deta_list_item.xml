@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:text="大家好啊的"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/chenpin"
+        android:textSize="15sp"
+        android:textColor="@color/item_text_normal3"
+        android:paddingTop="15dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="10dp"
+        android:singleLine="false"
+        android:maxEms="4" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/xianqin"
+        android:layout_weight="1"
+        android:textSize="15sp"
+        android:textColor="@color/text_normal"/>
+</LinearLayout>

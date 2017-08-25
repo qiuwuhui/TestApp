@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingRight="8dp" >
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/liner"
+        android:layout_alignTop="@+id/image"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/order_time_line_draw" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="8dp"
+        android:layout_above="@+id/view_2"
+        android:layout_marginLeft="16dp"
+        android:background="@drawable/order_time_line_draw" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="8.5dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/order_time_tips" />
+
+    <LinearLayout
+        android:id="@+id/liner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/image"
+        android:background="#FFF"
+        android:minHeight="64dp"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="测试数据"
+                android:textColor="#4D4D4D"
+                android:textSize="@dimen/text_size_title" />
+
+            <TextView
+                android:id="@+id/show_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/order_time"
+                android:drawablePadding="4dp"
+                android:maxLength="16"
+                android:text="2015-06-17 15:08:10"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="点击查看详情"
+            android:textColor="#AAAAAA"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/shape_radiu_gray"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:visibility="visible" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="这里显示设计师记录的工作内容，如无则不显示，点击可查看大图" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="#888" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:background="#888" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:background="#888" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

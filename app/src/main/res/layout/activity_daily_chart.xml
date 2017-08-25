@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_daily_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.DailyChartActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="#FFF"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="一期一会"
+            android:textSize="18sp"
+            android:textColor="#3C3C46"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <ImageView
+            android:id="@+id/fenxiang_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_button_fxy_default" />
+    </RelativeLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.OrientedViewPager
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/vpager"
+        android:layout_below="@+id/relativeLayout1"/>
+
+    <ProgressBar
+        android:id="@+id/progressWheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        />
+    <RelativeLayout
+        android:id="@+id/daily_lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_yingdao"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/daily_yd"
+            android:id="@+id/imageView4"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

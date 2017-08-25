@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_radiu_white_null"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="修改性别"
+        android:textColor="#333333"
+        android:textSize="19sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#FF575F" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/dialog1"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/item_list"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="男"
+            android:textColor="@drawable/selector_btn_text2"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#CCCCCC" />
+
+        <RadioButton
+            android:id="@+id/dialog2"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/item_list"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="女"
+            android:textColor="@drawable/selector_btn_text2"
+            android:textSize="16sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

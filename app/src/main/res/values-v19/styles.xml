@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ParkingTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+    </style>
+
+    <style name="TopTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:dialogTheme">@style/Theme.DeviceDefault.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="mysp" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@color/app</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+    <style name="TranslucentTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+</resources>

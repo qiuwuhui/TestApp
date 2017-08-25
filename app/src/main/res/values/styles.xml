@@ -1,0 +1,269 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+    <style name="MyDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <!-- 对话框是否有遮盖 -->
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="MyDialogStyleFullscreen">
+            <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="CustomCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+           <item name="android:button">@drawable/radio_group_selector</item>
+    </style>
+    <style name="addMemCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/add_men_radio</item>
+    </style>
+    <style name="main_tab_style">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/rb_bg_oval</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@drawable/selector_navig_text</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="yellowRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_yellow</item>
+        <item name="android:minHeight">@dimen/yellow_rating_bar_size</item>
+        <item name="android:maxHeight">@dimen/yellow_rating_bar_size</item>
+    </style>
+
+    <style name="yellowRatingBarSmall" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/rating_yellow_small</item>
+        <item name="android:minHeight">16dp</item>
+        <item name="android:maxHeight">16dp</item>
+    </style>
+
+    <style name="subscribe_my_tip_text">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/subscribe_tip_text</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="subscribe_more_tip_text" parent="@style/subscribe_my_tip_text">
+        <item name="android:textSize">13.0sp</item>
+    </style>
+
+    <style name="EditTextStyle">
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+        <item name="android:textColor">@color/text_normal</item>
+        <item name="android:textColorHint">#C9C9C9</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="TagGroup">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="atg_isAppendMode">false</item>
+        <item name="atg_inputHint">添加标签</item>
+        <item name="atg_borderColor">#49C120</item>
+        <item name="atg_textColor">#49C120</item>
+        <item name="atg_backgroundColor">#FFFFFF</item>
+        <item name="atg_dashBorderColor">#AAAAAA</item>
+        <item name="atg_inputHintColor">#80000000</item>
+        <item name="atg_inputTextColor">#DE000000</item>
+        <item name="atg_checkedBorderColor">#49C120</item>
+        <item name="atg_checkedTextColor">#FFFFFF</item>
+        <item name="atg_checkedMarkerColor">#FFFFFF</item>
+        <item name="atg_checkedBackgroundColor">#49C120</item>
+        <item name="atg_pressedBackgroundColor">#EDEDED</item>
+        <item name="atg_borderStrokeWidth">0.5dp</item>
+        <item name="atg_textSize">13sp</item>
+        <item name="atg_horizontalSpacing">8dp</item>
+        <item name="atg_verticalSpacing">4dp</item>
+        <item name="atg_horizontalPadding">12dp</item>
+        <item name="atg_verticalPadding">3dp</item>
+    </style>
+
+    <style name="TagGroup.Small" parent="TagGroup">
+        <item name="atg_textSize">10sp</item>
+        <item name="atg_horizontalSpacing">6dp</item>
+        <item name="atg_verticalSpacing">3dp</item>
+        <item name="atg_horizontalPadding">8dp</item>
+        <item name="atg_verticalPadding">2dp</item>
+    </style>
+
+    <style name="TagGroup.Large" parent="TagGroup">
+        <item name="atg_borderStrokeWidth">0.7dp</item>
+        <item name="atg_textSize">15sp</item>
+        <item name="atg_horizontalSpacing">9dp</item>
+        <item name="atg_verticalSpacing">5dp</item>
+        <item name="atg_horizontalPadding">14dp</item>
+        <item name="atg_verticalPadding">4dp</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FF3D7F</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FF3D7F</item>
+    </style>
+
+    <style name="TagGroup.Beauty_Red.Inverse" parent="TagGroup">
+        <item name="atg_borderColor">#FF3D7F</item>
+        <item name="atg_textColor">#FFFFFF</item>
+        <item name="atg_backgroundColor">#FF3D7F</item>
+        <item name="atg_inputHintColor">#80FFFFFF</item>
+        <item name="atg_inputTextColor">#DEFFFFFF</item>
+        <item name="atg_checkedBorderColor">#FF3D7F</item>
+        <item name="atg_checkedTextColor">#FF3D7F</item>
+        <item name="atg_checkedMarkerColor">#FF3D7F</item>
+        <item name="atg_checkedBackgroundColor">#FFFFFF</item>
+        <item name="atg_pressedBackgroundColor">#FF99B1</item>
+    </style>
+
+    <style name="ParkingTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:dialogTheme">@style/Theme.DeviceDefault.Dialog</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+        <item name="android:alertDialogTheme">@style/Theme.DeviceDefault.Dialog.Alert</item>
+    </style>
+
+    <style name="TopTheme" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:dialogTheme">@style/Theme.DeviceDefault.Dialog</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="ParkingThemeMain" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:dialogTheme">@style/Theme.DeviceDefault.Dialog</item>
+        <item name="android:alertDialogTheme">@style/Theme.DeviceDefault.Dialog.Alert</item>
+    </style>
+
+    <style name="base_listview_style" parent="@android:style/Widget.ListView">
+        <item name="android:scrollbarThumbVertical">@drawable/base_list_scrollbar_handle</item>
+        <item name="android:fadingEdgeLength">0.0dip</item>
+        <item name="android:alwaysDrawnWithCache">true</item>
+        <item name="android:listSelector">@drawable/base_list_selector</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:cacheColorHint">@null</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">0.0dip</item>
+    </style>
+
+    <style name="mysp" parent="@android:style/Theme.Holo.Light.NoActionBar">
+        <item name="android:windowBackground">@color/app</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <!-- popwidnow 显示消失动画 -->
+
+    <style name="mypopwindow_anim_style">
+        <item name="@android:windowEnterAnimation">@anim/popup_enter</item>
+        <!-- 指定显示的动画xml -->
+        <item name="@android:windowExitAnimation">@anim/popup_exit</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_anim_style2">
+        <item name="android:windowEnterAnimation">@anim/popup_enter2</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/popup_exit_2</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="mypopwindow_anim_style3">
+        <item name="android:windowEnterAnimation">@anim/open_gv2</item>
+        <!-- 指定显示的动画xml -->
+        <item name="android:windowExitAnimation">@anim/clos_gv2</item>
+        <!-- 指定消失的动画xml -->
+    </style>
+
+    <style name="textShadow">
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">0</item>
+    </style>
+
+    <style name="textShadowBalck">
+        <item name="android:shadowColor">#000</item>
+        <item name="android:shadowDx">1</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">1</item>
+    </style>
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityCloseEnterAnimation">@anim/aty_slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/aty_slide_right_out</item>
+        <item name="android:activityOpenEnterAnimation">@anim/aty_slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/aty_slide_left_out</item>
+    </style>
+
+    <style name="activityAnimationTop" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/aty_slide_bottom_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/aty_slide_bottom_out</item>
+    </style>
+
+    <style name="loginEditText">
+        <item name="android:background">@drawable/line_et_bg</item>
+        <item name="android:drawablePadding">16dp</item>
+        <item name="android:paddingRight">14dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">#282828</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="itemTextStyle" parent="android:Widget.Holo.Light.TextView">
+        <item name="android:background">@drawable/item_list</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:drawableRight">@drawable/admin_next</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+    <style name="editTextStyle">
+        <item name="android:background">@drawable/serch_shape</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/home_nav_icon_fdj_default</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:hint">搜索联系人</item>
+    </style>
+    <style name="AddeditTextStyle">
+        <item name="android:background">@color/white</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/home_nav_icon_fdj_default</item>
+        <item name="android:gravity">center|left</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:hint">搜索联系人</item>
+    </style>
+    <style name="editTextStyle1">
+        <item name="android:background">@drawable/home_nav_icon_ssk_default</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:drawableStart">@drawable/home_nav_icon_fdj_default</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:hint">城市/中文/拼音</item>
+    </style>
+</resources>

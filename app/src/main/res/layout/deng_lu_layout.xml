@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+
+    <LinearLayout
+        android:id="@+id/assss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/button1"
+            android:layout_width="@dimen/x580"
+            android:layout_height="@dimen/y80"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y35"
+            android:background="@drawable/home_con_icon_dlan_default"
+            android:gravity="center"
+            android:text="登录"
+            android:textSize="@dimen/x33" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/y30"
+            android:layout_marginTop="@dimen/y25"
+            android:text="可以获得更精准的推荐哦~~"
+            android:textColor="#8C8C96" />
+    </LinearLayout>
+
+</RelativeLayout>

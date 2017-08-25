@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StageActivity"
+    android:background="#EEEEEE" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:paddingTop="@dimen/action_bar_top_height" >
+
+                <TextView
+                    android:id="@+id/TextView04"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_item_bg"
+                    android:ellipsize="end"
+                    android:gravity="center"
+                    android:lines="1"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:text="全部装修流程"
+                    android:textColor="#3C3C46"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/fin_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/select_item_bg"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/con_button_gbtb_default" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:src="@drawable/con_icon_zxq_default" />
+
+                <TextView
+                    android:id="@+id/TextView03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="装修前" />
+            </LinearLayout>
+
+            <com.baolinetworktechnology.shejiquan.view.MyGridView
+                android:id="@+id/beforeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:numColumns="3" >
+            </com.baolinetworktechnology.shejiquan.view.MyGridView>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:src="@drawable/con_icon_zxz_default" />
+
+                <TextView
+                    android:id="@+id/TextView02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="装修中" />
+            </LinearLayout>
+
+            <com.baolinetworktechnology.shejiquan.view.MyGridView
+                android:id="@+id/middleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:numColumns="3" >
+            </com.baolinetworktechnology.shejiquan.view.MyGridView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp" >
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="@dimen/x60"
+                    android:layout_height="@dimen/y60"
+                    android:src="@drawable/con_icon_zxh_default" />
+
+                <TextView
+                    android:id="@+id/TextView01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="装修后" />
+            </LinearLayout>
+
+            <com.baolinetworktechnology.shejiquan.view.MyGridView
+                android:id="@+id/afterView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:numColumns="3" >
+            </com.baolinetworktechnology.shejiquan.view.MyGridView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

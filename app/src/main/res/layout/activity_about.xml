@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_text_back" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_my_view" />
+    <com.baolinetworktechnology.shejiquan.view.ReboundScrollView
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".AboutActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="17sp"
+                android:layout_marginTop="13dp"
+                android:textColor="#333333"
+                android:text="让设计更有价值" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="25dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="保障网独立事业部打造的设计圈是中国专业的设计平台。我们力求构建一个完整的设计全行业生态系统，目前我们将家装设计作为商业开发的第一个发力点。" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="设计圈秉承让设计更有价值的宗旨！为此我们将不懈努力，建立联结设计师、业主与建材商三者通路，推动设计师、业主、建材商交易透明化，平等化，价值化，改变传统装修及家居模式，建立线上装修一站式服务体系！" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="TO业主" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="我们为您推荐海量室内设计师，TA们有创意、有逼格、有耐心、有经验，还有好作品。在这里您不仅能找到细致体贴的他，打造您的美好家居生活。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="我们为您推送严选家装、公装成套经典案例，精美装修效果图，并详细分类整理，帮您发现自身喜好，寻找内心的真实需求。" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:lineSpacingExtra="1.2dp"
+                android:lineSpacingMultiplier="1.2"
+                android:layout_marginTop="20dp"
+                android:textSize="15sp"
+                android:textColor="#333333"
+                android:text="我们为您建立完善装修设计知识体系，设立问答、百科、资讯等栏目，覆盖装修设计各阶段，帮您深入了解装修知识，规避装修风险" />
+        </LinearLayout>
+    </com.baolinetworktechnology.shejiquan.view.ReboundScrollView>
+
+</LinearLayout>

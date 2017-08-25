@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </android.support.v7.widget.RecyclerView>
+
+            <RelativeLayout
+                android:id="@+id/No_layout"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:textColor="#999999"
+                    android:text="设计师还没有上传作品!" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/icon_wfbal"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+        android:text="没有更多了..."
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/not_Tv"
+        android:textColor="#C8C8C8"
+        android:gravity="center"
+        android:background="#EEEEEE"
+        android:visibility="gone"/>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/buyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+</RelativeLayout>

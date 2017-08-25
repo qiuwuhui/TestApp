@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapActivity" >
+
+    <LinearLayout
+        android:id="@+id/all_lyou"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.40"
+            android:focusable="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:focusableInTouchMode="true" >
+
+            <TextView
+                android:id="@+id/editTex_serch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/home_nav_icon_ssk_default"
+                android:cursorVisible="false"
+                android:ems="10"
+                android:hint="搜索位置信息"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="@dimen/x32" 
+                android:textColor="#C8C8D2"
+                android:paddingLeft="40dp"
+                android:gravity="left|center" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/home_nav_icon_fdj_default"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_anniuk"
+            android:gravity="center"
+            android:text="搜索"
+            android:textColor="@color/main_tab_text_color2"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_ditu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout1"
+        android:layout_below="@+id/all_lyou" >
+
+    </com.amap.api.maps.MapView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFF" >
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/con_button_dwsb_default"
+            android:text="确定"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

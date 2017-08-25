@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line">
+    <com.baolinetworktechnology.shejiquan.view.ListViewNewsDesig
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/desilistView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.ListViewNewsDesig>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ding_bu_fan"
+        android:id="@+id/ding_bu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"/>
+</RelativeLayout>

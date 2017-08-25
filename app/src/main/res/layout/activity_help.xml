@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:orientation="vertical"
+    tools:context=".HelpActivity" >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <com.baolinetworktechnology.shejiquan.view.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:text="案例发布说明"
+                android:textColor="#6A6969"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. 使用PC打开浏览器，输入网址：www.sjq315.com，进入“设计圈”官网。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2. 设计师/装修公司登录以后，点击个人中心，进入个人管理中心后台。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3. 找到主页管理-> 我的案例->发布案例。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4. 在案例发布页面，填写案例相关信息后发布。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5. 案例提交发布后，由设计圈审核，审核成功后正式发布。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="对于违反发布准则的作品，设计圈将予以驳回，并告知理由，设计师可修改后重新提交审核。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoLink="email|web"
+                android:text="作品发布准则："
+                android:textColor="#919191"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dp"
+                android:text="1.图片清晰无水印、无拼图、不颠倒或大幅度倾斜。\n2.案例（博文）不涉及淫秽、黄色、色情、赌博、暴力、反党、反政府、教唆犯罪等内容。\n3.案例（博文）所有权必须属于设计师本人，不可抄袭、转载，若涉嫌抄袭等侵权行为，一切后果由设计师本人承担。\n4.案例（博文）不涉及广告推销内容。"
+                android:textColor="#919191"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </com.baolinetworktechnology.shejiquan.view.ReboundScrollView>
+
+</LinearLayout>

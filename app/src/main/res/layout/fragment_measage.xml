@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/app_title_bg"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的消息"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/nav_back"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_shanchu" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect_radiu_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/itemCommentMeage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="评论消息"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/admin_next" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/line" />
+
+        <RelativeLayout
+            android:id="@+id/itemSystemMeage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/button_xtxx_default"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="系统消息"
+                android:textColor="#333333"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/admin_next" />
+
+            <TextView
+                android:id="@+id/redTips"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="#FF0000"
+                android:textSize="14sp"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+
+</LinearLayout>

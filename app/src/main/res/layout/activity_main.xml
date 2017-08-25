@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.MainActivity"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.baolinetworktechnology.shejiquan.view.NoScrollViewPager
+        android:id="@+id/mainViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigTab" />
+
+    <com.baolinetworktechnology.shejiquan.view.HomeNavigTab
+        android:id="@+id/navigTab"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+    </com.baolinetworktechnology.shejiquan.view.HomeNavigTab>
+    <RelativeLayout
+        android:id="@+id/zezao_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_top_height"
+                android:paddingTop="@dimen/action_bar_top_height1"
+                android:background="@color/item_yingdao"/>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/yd_r_li" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/item_yingdao"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/fan_hui_ding"
+            android:layout_marginBottom="60dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/imageView6"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shou_wei_si"
+            android:id="@+id/imageView9"
+            android:layout_marginBottom="33dp"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="12dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shou_zhong_si"
+            android:id="@+id/imageView8"
+            android:layout_marginBottom="77dp"
+            android:layout_above="@+id/imageView9"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shou_ti_shi"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginEnd="33dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/imageView9"
+            android:layout_alignEnd="@+id/imageView9" />
+    </RelativeLayout>
+</RelativeLayout>

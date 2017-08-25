@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_alignParentBottom="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/itemConcer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#3f4f69"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <CheckBox
+            android:id="@+id/tvConcer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@null"
+            android:clickable="false"
+            android:drawableLeft="@drawable/select_favorite_ws2"
+            android:drawablePadding="8dp"
+            android:focusable="false"
+            android:gravity="center"
+            android:text="关注我"
+            android:textColor="@drawable/selector_text_wihte_red"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="2dp"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/itemWeiTuo"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="#3f4f69"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/weituosheji_big"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="委托设计"
+            android:textColor="@drawable/selector_text_wihte_red"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

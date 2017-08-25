@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.30">
+
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_width="236dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:text="签到"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView12"
+                android:textSize="18sp"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:text="2016-12-23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#8C8C96"
+                android:id="@+id/Time_text" />
+        </LinearLayout>
+
+        <TextView
+            android:text="+5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Score_text"
+            android:gravity="right"
+            android:textSize="18sp"
+            android:textColor="#FD6530"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/line" />
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/lay_diss"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40.0dip"
+        android:background="@color/white">
+
+        <TextView
+            android:text="切换栏目"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_channel"
+            android:layout_gravity="center"
+            android:layout_marginLeft="14dip"
+            android:textSize="15sp"
+            android:textColor="@color/item_yingdao"
+            android:layout_weight="0.74" />
+
+        <TextView
+            android:id="@+id/complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="center"
+            android:textColor="@color/app_color"
+            android:background="@drawable/yuanjiao_layout8"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="排序"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:id="@+id/textView36"
+            android:layout_marginBottom="2dip"
+            android:background="@color/line"
+            android:layout_marginTop="2dip"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.16">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/shouye_shang"
+                android:id="@+id/finsh_img"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F4F2F2">
+
+        <com.baolinetworktechnology.shejiquan.draggridview.DragGridView
+            android:id="@+id/dragGridView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@android:color/transparent"
+            android:layout_marginLeft="14dip"
+            android:layout_marginRight="14dip"
+            android:layout_marginBottom="14dip"
+            android:layout_marginTop="4dip"
+            android:gravity="center"
+            android:horizontalSpacing="14dip"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:scrollbars="vertical"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="14.0px"  >
+        </com.baolinetworktechnology.shejiquan.draggridview.DragGridView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000">
+    </RelativeLayout>
+
+</LinearLayout>

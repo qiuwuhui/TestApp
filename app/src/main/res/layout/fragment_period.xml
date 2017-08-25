@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="社区"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/aaaaa"
+        android:layout_width="match_parent"
+        android:background="@color/acyivity_bg"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_height="1dp"/>
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/periodView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aaaaa"
+        android:divider="#EEEEEE"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text">
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fa_bu_post"
+        android:id="@+id/btn_release"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

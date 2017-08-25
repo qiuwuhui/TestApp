@@ -1,0 +1,146 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/setting_title"
+        layout="@layout/title_bar_text_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/item_head"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:background="@drawable/item_list"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:id="@+id/userHead"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/xiaotu"
+                android:visibility="visible" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/ib_next"
+                android:gravity="center_vertical"
+                android:paddingRight="8dp"
+                android:text="更换头像"
+                android:textColor="@drawable/selector_item_text_color"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/ib_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/admin_next" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_horizontal_full" />
+
+        <RelativeLayout
+            android:id="@+id/item_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="我的二维码"
+                android:textColor="@color/text_normal"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/admin_next" />
+        </RelativeLayout>
+
+        <include layout="@layout/line_horizontal_full" />
+
+        <RelativeLayout
+            android:id="@+id/item_weishop"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:text="微名片模版设置"
+                android:textColor="@color/text_normal"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/admin_next" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_paswd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:gravity="center_vertical"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingRight="8dp"
+                android:text="修改登录密码"
+                android:textColor="@color/text_normal"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/admin_next"
+                android:textColor="@drawable/selector_item_text_color" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

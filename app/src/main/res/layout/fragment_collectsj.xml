@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CollectsjFragment" >
+
+    <com.baolinetworktechnology.shejiquan.view.DesignerListView
+        android:id="@+id/listViewCase"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EEEEEE"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text">
+  </com.baolinetworktechnology.shejiquan.view.DesignerListView>
+
+    <RelativeLayout
+        android:id="@+id/No_layout"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/icon_wdgztb" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="#999999"
+            android:text="您还没有关注设计师" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_new_label"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.NewLabelActivity">
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:background="#FFF" >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/select_item_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:src="@drawable/nav_button_fhan_default" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="标签"
+                android:textColor="@color/text_normal"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <TextView
+                android:text="新建标签"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:gravity="center|left"
+                android:drawableLeft="@drawable/add_xun_friend"
+                android:textColor="@color/app_color"
+                android:paddingLeft="12dp"
+                android:textSize="16sp"
+                android:drawablePadding="10dp"
+                android:id="@+id/add_lable" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="12dp"
+                android:background="@color/line" />
+            <android.support.v7.widget.RecyclerView
+                android:id = "@+id/lableRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+            </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

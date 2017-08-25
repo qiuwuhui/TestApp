@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+        <ImageView
+            android:id="@+id/al_userLogo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/zixun_tu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            android:id="@+id/al_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="地中海风格有什么特点"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="13dp"
+            android:textColor="@color/text_normal"
+            android:paddingBottom="13dp"/>
+
+</LinearLayout>

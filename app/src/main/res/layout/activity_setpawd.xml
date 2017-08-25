@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+    tools:context=".activity.RegisterActivity" >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <com.guojisheng.koyview.MyEditText
+        android:id="@+id/myetOldPawd"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:hint="旧密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true" />
+
+    <com.guojisheng.koyview.MyEditText
+        android:id="@+id/myetNewPawd"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:hint="新密码,最少6位"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true" />
+
+    <com.guojisheng.koyview.MyEditText
+        android:id="@+id/myetNewPawd2"
+        style="@style/EditTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:hint="确认新密码"
+        android:inputType="textPassword"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tv_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:padding="16dp"
+        android:text="手机号已存在"
+        android:textColor="@color/app_color"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnSetPawd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_login_selector"
+        android:onClick="onClick"
+        android:text="确定"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

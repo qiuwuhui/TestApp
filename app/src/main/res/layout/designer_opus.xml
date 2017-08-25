@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/acyivity_bg"
+    android:minHeight="700dp"
+    android:orientation="vertical"
+    android:paddingTop="16dp" >
+
+    <com.baolinetworktechnology.shejiquan.view.ListViewCase2
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/acyivity_bg"
+        android:divider="@color/acyivity_bg"
+        android:dividerHeight="16dp"
+        ptr:ptrHeaderTextColor="#838383" >
+    </com.baolinetworktechnology.shejiquan.view.ListViewCase2>
+
+
+</LinearLayout>

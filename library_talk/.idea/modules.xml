@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../DatePicker/DatePicker.iml" filepath="$PROJECT_DIR$/../DatePicker/DatePicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Koy_libary/Koy_libary.iml" filepath="$PROJECT_DIR$/../Koy_libary/Koy_libary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MyApplication.iml" filepath="$PROJECT_DIR$/../MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../easeui/easeui.iml" filepath="$PROJECT_DIR$/../easeui/easeui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../library_pulltorefresh/library_pulltorefresh.iml" filepath="$PROJECT_DIR$/../library_pulltorefresh/library_pulltorefresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_talk.iml" filepath="$PROJECT_DIR$/library_talk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../uemng_udate/uemng_udate.iml" filepath="$PROJECT_DIR$/../uemng_udate/uemng_udate.iml" />
+    </modules>
+  </component>
+</project>

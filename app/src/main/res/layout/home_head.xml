@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:focusable="true"
+    android:orientation="vertical" >
+
+    <com.baolinetworktechnology.shejiquan.view.KoySliding
+        android:id="@+id/koySliding"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:visibility="gone">
+    </com.baolinetworktechnology.shejiquan.view.KoySliding>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/y10"
+            android:drawableTop="@drawable/home_con_button_kal_default"
+            android:gravity="center"
+            android:padding="@dimen/y20"
+            android:text="全屋案例"
+            android:textColor="#3C3C46"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/y10"
+            android:drawableTop="@drawable/home_con_button_zsj_default"
+            android:gravity="center"
+            android:padding="@dimen/y20"
+            android:text="找设计师"
+            android:textColor="#3C3C46"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/y10"
+            android:drawableTop="@drawable/home_con_button_zgs_default"
+            android:gravity="center"
+            android:padding="@dimen/y20"
+            android:text="设计资讯"
+            android:textColor="#3C3C46"
+            android:textSize="@dimen/y30" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/y10"
+            android:drawableTop="@drawable/ri_qian_fash"
+            android:gravity="center"
+            android:padding="@dimen/y20"
+            android:text="一期一会"
+            android:textColor="#3C3C46"
+            android:textSize="@dimen/y30" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <View
+            android:layout_width="4dp"
+            android:layout_height="22dp"
+            android:background="#FD6530"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设计大师"
+                android:textColor="@color/text_normal"
+                android:gravity="center|left"
+                android:layout_gravity="center"
+                android:typeface="monospace"
+                android:textSize="16sp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="查看全部"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center|right"
+            android:drawableRight="@drawable/admin_next"
+            android:drawablePadding="6dp"
+            android:layout_marginRight="12dp"
+            android:textColor="#c7c7c7"
+            android:id="@+id/she_ji_quan"
+            android:textSize="14sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.MyGridView
+            android:id="@+id/hzListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@drawable/divider"
+            android:dividerHeight="1dp"
+            android:numColumns="4"
+            android:layout_marginBottom="8dp"
+            android:gravity="center" >
+    </com.baolinetworktechnology.shejiquan.view.MyGridView>
+    <!--<com.baolinetworktechnology.shejiquan.view.HorizontalListView-->
+        <!--android:id="@+id/hzListView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/y180"-->
+        <!--android:divider="@drawable/divider"-->
+        <!--android:dividerHeight="1dp"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:gravity="center" >-->
+    <!--</com.baolinetworktechnology.shejiquan.view.HorizontalListView>-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F5F5F5" />
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="4dp"
+            android:layout_height="25dp"
+            android:background="#FD6530"
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:text="猜你喜欢"
+                android:typeface="monospace"
+                android:textColor="@color/text_normal"
+                android:layout_gravity="center"
+                android:gravity="center|left"
+                android:textSize="16sp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/acyivity_bg" />
+</LinearLayout>

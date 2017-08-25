@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.PhotoActivity" >
+
+    <com.baolinetworktechnology.shejiquan.view.KoyViewPager
+        android:id="@+id/kvp"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <LinearLayout
+        android:id="@+id/relati"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#88ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6.15"
+                android:ellipsize="end"
+                android:maxLength="16"
+                android:padding="16dp"
+                android:singleLine="true"
+                android:textColor="@color/text_normal"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="0/0"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/pull_text" />
+        <LinearLayout
+            android:id="@+id/item"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:background="@color/line">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:src="@drawable/nav_button_fhan_default"
+                android:layout_weight="0.57" />
+
+            <ImageView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.54"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:src="@drawable/ic_download1"/>
+
+            <ImageView
+                android:id="@+id/collect"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:src="@drawable/nav_button_wsce_default"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_weight="0.57" />
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_alignParentRight="true"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_weight="0.57"
+                android:background="?android:attr/selectableItemBackground"
+                android:src="@drawable/nav_button_fxy_default" />
+
+            <TextView
+                android:id="@+id/item_comment"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="3.23"
+                android:background="@drawable/yuanjiao_layout5"
+                android:gravity="center|left"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:paddingLeft="20dp"
+                android:text="写评论..."
+                android:layout_marginRight="10dp"
+                android:visibility="invisible"
+                android:textColor="#8C8C96" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

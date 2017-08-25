@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/trans_black"
+    android:paddingBottom="60dp"
+    android:paddingLeft="16dp"
+    tools:context=".TipsActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/tvDesigning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_radiu_white_null"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:text="单击可以返回顶部哦~"
+            android:textColor="#545454" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_below="@id/tvDesigning"
+            android:src="@drawable/ic_tips_3" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <CheckBox
+                android:id="@+id/cbCost"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="全国"
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/cbDesStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="擅长风格 "
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/cbSpace"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="擅长户型"
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <CheckBox
+                android:id="@+id/cbSort"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:button="@null"
+                android:drawablePadding="8dp"
+                android:drawableRight="@drawable/selector_up_down"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:singleLine="true"
+                android:text="默认排序"
+                android:textColor="@drawable/selector_color_general_text"
+                android:textSize="14sp" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

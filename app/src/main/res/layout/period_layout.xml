@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/figureLay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:id="@+id/shequ_loge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_icon"
+                app:border_colo="#00000000"
+                app:border_widt="0.5dp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="踩蘑菇的小男孩"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#737373"
+                android:layout_marginLeft="10dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/she_ji_author"
+                android:id="@+id/isAuthor"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+        <TextView
+        android:id="@+id/Post_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp"
+        android:textColor="#333333"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="小户型这样设计，也能让你有衣帽间，小空间大容量" />
+
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:text="装修一整年终于毕业了！从装修菜鸟一路走来，翻阅了无 数装修日记贴，几乎每天当低头族，吃饭也不离手。终于 拯救了一套属于自己风格的房子......" />
+
+        <com.baolinetworktechnology.shejiquan.view.PerNineGridTestLayout
+            android:id="@+id/layout_nine_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+        <!--旧的点赞评论-->
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="13dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:text="243"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chakan"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/cha_kan_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:text="150"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pinluen"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:layout_marginLeft="10dp"
+                    android:drawableLeft="@drawable/oin_luen_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:text="366"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dianzan"
+                    android:textColor="#A8A8A8"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="12sp"
+                    android:drawableLeft="@drawable/dian_zan_falsh"
+                    android:drawablePadding="3dp"/>
+
+                <TextView
+                    android:id="@+id/tiem_post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10分钟前"
+                    android:layout_weight="7.33"
+                    android:textColor="#A8A8A8"
+                    android:textSize="12sp"
+                    android:gravity="right"
+                    android:visibility="gone"/>
+        </LinearLayout>
+        <!--新的点赞收藏评论-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:visibility="visible"
+            android:layout_height="wrap_content">
+            <RelativeLayout
+                android:id="@+id/clickFabulous"
+                android:layout_marginLeft="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/clickFabulousimage"
+                    android:background="@drawable/dian_zan_jie"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/clickFabulousnum"
+                    android:layout_toRightOf="@+id/clickFabulousimage"
+                    android:text="15"
+                    android:layout_marginLeft="3dp"
+                    android:textSize="11sp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/Collection"
+                android:layout_toRightOf="@+id/clickFabulous"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/Collectionimage"
+                    android:background="@drawable/nav_button_wsce_default"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/Collectionnum"
+                    android:layout_toRightOf="@+id/Collectionimage"
+                    android:text="15"
+                    android:textSize="11sp"
+                    android:textColor="#666666"
+                    android:layout_marginLeft="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/comment"
+                android:layout_toRightOf="@+id/Collection"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/commentimage"
+                    android:background="@drawable/pinglun"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/commentnum"
+                    android:layout_toRightOf="@+id/commentimage"
+                    android:text="15"
+                    android:textSize="11sp"
+                    android:layout_marginLeft="3dp"
+                    android:textColor="#666666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/share"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+                <ImageView
+                    android:id="@+id/shareimage"
+                    android:background="@drawable/dian_zan_jie"
+                    android:layout_marginTop="3dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="1dp"
+        android:background="@color/acyivity_bg"/>
+</LinearLayout>

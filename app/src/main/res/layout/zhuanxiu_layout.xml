@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:layout_marginTop="2dp">
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/x15"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_morentxs" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/x450"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userLogo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userLogo"
+            android:text="厦门福旺居装饰工程有限公司" 
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/image_tv"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_shouf" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/juli_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="未知"
+            android:textColor="#8C8C96"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="57dp"
+            android:textSize="11sp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvTitle"
+            android:layout_marginTop="35dp">
+
+            <TextView
+                android:id="@+id/anli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="设计方案：511"
+                android:textColor="#FF6464"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/chayue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查阅数：16222"
+                android:textColor="#FF6464"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#EEEEEE" />
+
+</RelativeLayout>

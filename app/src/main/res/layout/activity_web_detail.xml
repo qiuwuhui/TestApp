@@ -1,0 +1,270 @@
+<com.baolinetworktechnology.shejiquan.view.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:id="@+id/mRoot1">
+
+    <include
+        android:id="@+id/il"
+        layout="@layout/view_web_bar" />
+
+    <com.guojisheng.koyview.GScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge = "none"
+        android:layout_above="@+id/item"
+        android:scrollbars="none"
+        android:layout_below="@id/il" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:fillViewport="true"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="#333333"
+                android:text="标题"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="30dp">
+
+                <com.baolinetworktechnology.shejiquan.view.CircleImg
+                    android:id="@+id/userLogo"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/default_icon"
+                    app:border_colo="#F5F5F5"
+                    app:border_widt="3dp" />
+
+                <TextView
+                    android:text="邱武辉"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:id="@+id/detaName"
+                    android:textColor="#999999"
+                    android:textSize="14sp"
+                    android:layout_weight="0.04" />
+
+                <TextView
+                    android:text="03-08 12:27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timeTV"
+                    android:layout_marginLeft="5dp"
+                    android:layout_gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:layout_weight="0.82" />
+
+                <TextView
+                    android:id="@+id/liulang_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="14sp"
+                    android:textColor="#999999"
+                    android:layout_gravity="right|center"
+                    android:drawableLeft="@drawable/con_button_yja_default"
+                    android:drawablePadding="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.12" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/daodu_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:textColor="#909098"
+                android:textSize="17sp"
+                android:lineSpacingMultiplier="1.5"
+                android:textScaleX="0.96"
+                android:text="在室内设计中，厨房岛台的设计尤为困难，很多用户经常问如何设计一款合适的岛台。尽管没有一套固定的规律来规定如何设计岛台，但是还是有一定的规律可循的。" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="300dp"
+                android:background="#D1D1D1" />
+            <WebView
+                android:id="@+id/webView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.guojisheng.koyview.GScrollView>
+
+    <RelativeLayout
+        android:id="@+id/loading_over"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/action_bar_height"
+        android:background="#E6E6E6"
+        android:gravity="center"
+        android:visibility="gone" >
+
+        <com.koy.loading.AVLoadingIndicatorView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="30dip"
+            app:indicator="LineScalePulseOut"
+            app:indicator_color="@color/app_color" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loading"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="3dip"
+            android:text="正在获取数据..."
+            android:textColor="#737373" />
+
+        <include
+            android:id="@+id/url_error"
+            layout="@layout/activity_url_error"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="40dp"
+        android:background="@color/line" />
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="10dp"
+            android:paddingRight="25dp"
+            android:src="@drawable/share" />
+
+        <CheckBox
+            android:id="@+id/collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:button="@drawable/nav_fav1"
+            android:gravity="center"
+            android:minWidth="30dp"
+            android:paddingRight="25dp"  />
+
+        <TextView
+            android:id="@+id/tvComment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.82"
+            android:drawableLeft="@drawable/menu_button_kpl_default"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="#3C3C46"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/item_comment"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="5.43"
+            android:background="@drawable/yuanjiao_layout5"
+            android:gravity="center|left"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:paddingLeft="20dp"
+            android:text="写评论..."
+            android:layout_marginRight="10dp"
+            android:textColor="#8C8C96" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/item_pingluen"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:visibility="gone">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/pingluen_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="3.07"
+            android:background="@drawable/yuanjiao_layout5"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:textSize="13sp"
+            android:layout_marginTop="4.5dip"
+            android:layout_marginBottom="4.5dip"
+            android:textColor="#8C8C96" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/fasong_btn"
+            android:layout_width="0dp"
+            android:layout_height="36dip"
+            android:layout_marginTop="4.5dip"
+            android:layout_marginBottom="4.5dip"
+            android:layout_weight="0.6"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#3C3C46"
+            android:textSize="13sp" />
+    </LinearLayout>
+    </LinearLayout>
+</com.baolinetworktechnology.shejiquan.view.MyRelativeLayout>

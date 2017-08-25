@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg">
+
+    <RelativeLayout
+        android:id="@+id/Gofor"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/editTex_serch"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/x15"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/y15"
+            android:background="@drawable/serch_shape"
+            android:cursorVisible="false"
+            android:ems="10"
+            android:gravity="center"
+            android:textColorHint="#B8B8B8"
+            android:hint="作品、设计师、资讯" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="87dp"
+            android:drawableLeft="@drawable/home_nav_icon_fdj_default"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical|center_horizontal"
+            android:lines="1"
+            android:textColor="#C8C8D2"
+            android:textSize="@dimen/x32"
+            android:layout_marginStart="95dp"
+            android:layout_alignBaseline="@+id/editTex_serch"
+            android:layout_alignBottom="@+id/editTex_serch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+    </RelativeLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/listViewNews"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusable="true"
+            android:numColumns="2"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/pull_text"
+            android:layout_below="@+id/View1">
+        </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ding_bu_fan"
+        android:id="@+id/ding_bu"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"/>
+</RelativeLayout>

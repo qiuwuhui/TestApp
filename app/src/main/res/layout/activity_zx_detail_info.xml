@@ -1,0 +1,447 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".ZxDetailInfoActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFF" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="个人设置"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_title2"
+            android:layout_width="55dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv_title"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/icon_anniuk"
+            android:gravity="center"
+            android:text="提交"
+            android:textColor="@color/main_tab_text_color2"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/acyivity_bg"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/item_head"
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <com.baolinetworktechnology.shejiquan.view.CircleImg
+                    android:id="@+id/userHead"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="4dp"
+                    android:layout_toLeftOf="@+id/ib_next"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/xiaotu"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingRight="8dp"
+                    android:text="公司LOGO"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/ib_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_1"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="#FFF"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="公司姓名"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <com.guojisheng.koyview.MyEditText
+                    android:id="@+id/name"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@null"
+                    android:drawablePadding="8dp"
+                    android:gravity="right|center_vertical"
+                    android:maxLength="10"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="15sp" >
+
+                    <requestFocus />
+                </com.guojisheng.koyview.MyEditText>
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="24dp"
+                    android:gravity="center_vertical"
+                    android:text="营业执照"
+                    android:layout_weight="1"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/shiming_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:text="未认证"
+                    android:textColor="#FF6464"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/item_weishop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="微名片模版设置"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </RelativeLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="城市"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/fromCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_cost"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="服务区域"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/cost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.67"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_desStyle"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="详细地址"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/des_style"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.67"
+                    android:ellipsize="end"
+                    android:gravity="center|right"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="15sp" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/item_designing"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLength="5"
+                    android:text="地图位置"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/designing"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:text="未设置"
+                    android:textColor="#FF6464"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/wenhou"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/item_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/item_list"
+                android:onClick="onClick"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:maxLength="5"
+                    android:text="问候语"
+                    android:textColor="@color/text_normal"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/wenhou_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="right|center_vertical"
+                    android:paddingRight="8dp"
+                    android:singleLine="true"
+                    android:textColor="@drawable/selector_item_text_color"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:src="@drawable/admin_next" />
+            </LinearLayout>
+
+            <include layout="@layout/line_horizontal_full" />
+
+            <LinearLayout
+                android:id="@+id/LinearLayout01"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="3dp"
+                    android:text="*"
+                    android:textColor="#FF6464"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="left|center"
+                    android:text="更多资料请登录 www.sjq315.com完善"
+                    android:textColor="@color/item_text_normal"
+                    android:textIsSelectable="true" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

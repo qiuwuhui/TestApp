@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <GridView
+            android:id="@+id/case_class_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F6F6F6"
+            android:horizontalSpacing="16dp"
+            android:numColumns="3"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp"
+            android:verticalSpacing="10dp"
+            android:visibility="visible" >
+        </GridView>
+
+        <LinearLayout
+            android:id="@+id/itemCity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans_white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="定位城市"
+                android:textColor="#5D5D5D"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans_white"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp" >
+
+                <Button
+                    android:id="@+id/btnCity"
+                    android:layout_width="96dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape_rect_white"
+                    android:tag="-1"
+                    android:text="定位中"
+                    android:textColor="#5D5D5D"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/btnAll"
+                    android:layout_width="96dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@drawable/shape_rect_white"
+                    android:tag="0"
+                    android:text="全国"
+                    android:textColor="#5D5D5D"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans_white"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:text="热门城市"
+                android:textColor="#5D5D5D"
+                android:textSize="16sp" />
+
+            <GridView
+                android:id="@+id/gvCity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/trans_white"
+                android:gravity="center"
+                android:horizontalSpacing="8dp"
+                android:minHeight="64dp"
+                android:numColumns="3"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:verticalSpacing="8dp" >
+            </GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EEE" />
+
+            <TextView
+                android:id="@+id/tvAll"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/trans_white"
+                android:drawableRight="@drawable/admin_next"
+                android:gravity="center_vertical"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:tag="-11"
+                android:text="查看全部" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemCityqu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible" 
+            >
+
+            <GridView
+                android:id="@+id/gvCityqu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EEEEEE"
+                android:gravity="center"
+                android:horizontalSpacing="8dp"
+                android:minHeight="64dp"
+                android:numColumns="3"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="8dp"
+                android:verticalSpacing="8dp"
+                >
+            </GridView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EEE" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp" 
+                android:background="#EEEEEE">
+
+                <RelativeLayout
+                    android:id="@+id/chengsi_layo"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/menu_icon_xsrk_default" 
+                    >
+
+                    <TextView
+                        android:id="@+id/chengsi_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="25dp"
+                        android:drawablePadding="3dp"
+                        android:drawableRight="@drawable/admin_next"
+                        android:text="切换"
+                        android:tag="-11"
+                        android:textColor="#8C8C96" />
+
+                    <TextView
+                        android:id="@+id/chengshi"
+                        android:layout_width="@dimen/x400"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:singleLine="true"
+                        android:tag="-11"
+                        android:text="查看全部"
+                        android:textColor="#8C8C96" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <View
+        android:id="@+id/popuBlank"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" >
+    </View>
+
+</LinearLayout>

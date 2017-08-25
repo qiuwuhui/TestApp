@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ 
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#50777777"
+        android:gravity="center_vertical" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_back"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/detail_share" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_bar"
+        android:padding="16dp" >
+
+        <LinearLayout
+            android:id="@+id/itemFanKe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="访客"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tvFanKe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="64dp" >
+
+                <com.baolinetworktechnology.shejiquan.view.CircleImg
+                    android:id="@+id/user_logo"
+                    android:layout_width="64dp"
+                    android:layout_height="64dp"
+                    android:src="@drawable/xiaotu" />
+
+                <ImageView
+                    android:id="@+id/ivHonor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignRight="@+id/user_logo"
+                    android:layout_marginRight="2dp"
+                    android:paddingBottom="4dp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="未登录"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tvPosit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/itemFans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="粉丝"
+                android:textColor="#FFF" />
+
+            <TextView
+                android:id="@+id/tvFans"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.MicroMenus
+        android:id="@+id/microMenus"
+        android:layout_width="248dp"
+        android:layout_height="248dp"
+        android:layout_below="@id/rl2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp" >
+    </com.baolinetworktechnology.shejiquan.view.MicroMenus>
+
+</RelativeLayout>

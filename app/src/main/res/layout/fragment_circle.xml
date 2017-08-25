@@ -1,0 +1,130 @@
+<com.baolinetworktechnology.shejiquan.view.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cricle_rela"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:id="@+id/aaaaa"
+        android:layout_width="match_parent"
+        android:background="@color/acyivity_bg"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_height="1dp"/>
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/periodView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aaaaa"
+        android:divider="#EEEEEE"
+        android:dividerHeight="0dp"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text">
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/fa_bu_post"
+        android:id="@+id/btn_release"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <LinearLayout
+        android:id="@+id/item_pingluen"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/white"
+        android:visibility="gone">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:gravity="center">
+
+        <EditText
+            android:id="@+id/pingluen_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="3.07"
+            android:background="@drawable/yuanjiao_layout5"
+            android:gravity="center|left"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="7dp"
+            android:textSize="13sp"
+            android:layout_marginTop="4.5dip"
+            android:layout_marginBottom="4.5dip"
+            android:textColor="#8C8C96">
+            <requestFocus />
+        </EditText>
+        <TextView
+            android:id="@+id/fasong_btn"
+            android:layout_width="0dp"
+            android:layout_height="36dip"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="4.5dip"
+            android:layout_marginBottom="4.5dip"
+            android:layout_weight="0.6"
+            android:background="@color/white"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#3C3C46"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:id="@+id/item_wei">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/color_my_view" />
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:src="@drawable/icon_xxwdl" />
+
+        <TextView
+            android:id="@+id/denglu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="您需要登录后才能查看朋友圈"
+            android:textColor="#999999"
+            android:textSize="16sp"
+            android:layout_marginTop="13dp"/>
+
+        <Button
+            android:id="@+id/btnOK"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_red_gree_radu4"
+            android:text="立即登录"
+            android:textColor="@color/app_color"
+            android:textSize="14sp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</com.baolinetworktechnology.shejiquan.view.MyRelativeLayout>

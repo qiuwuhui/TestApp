@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginRight="150dip">
+
+        <RadioButton
+            android:id="@+id/rbMeitu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="案例"
+            android:paddingTop="3dip"
+            android:textColor="@drawable/selector_red_white"
+            android:textSize="15sp" />
+        <!-- android:background="@drawable/shape_selector_red_white_l"-->
+        <RadioButton
+            android:id="@+id/rbOpus"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="荐材"
+            android:paddingTop="3dip"
+            android:textColor="@drawable/selector_red_white"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rbTuei"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="动态"
+            android:paddingTop="3dip"
+            android:textColor="@drawable/selector_red_white"
+            android:textSize="15sp" />
+        <RadioButton
+            android:id="@+id/rbJian"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="简介"
+            android:paddingTop="3dip"
+            android:textColor="@drawable/selector_red_white"
+            android:textSize="15sp" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginRight="150dip">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/Meitu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:layout_alignParentBottom="true"
+                android:background="#FD6530" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/Opus_layout"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="#FD6530"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:visibility="invisible"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/Tuei_layout"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="#FD6530"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <View
+                android:id="@+id/Jian_layout"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1"
+                android:layout_alignParentBottom="true"
+                android:background="#FD6530"
+                android:layout_marginLeft="10dip"
+                android:layout_marginRight="10dip"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/line" />
+</LinearLayout>

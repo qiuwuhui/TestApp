@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baolinetworktechnology.shejiquan.view.MyRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_note"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.MainNoteActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/line"
+        android:scrollbars="none"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/line">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/action_bar_top_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFF" >
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/select_item_bg"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:src="@drawable/nav_button_fhan_default" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="备注信息"
+                    android:textColor="@color/text_normal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_title"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="完成"
+                    android:textColor="@color/app_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:text="备注名"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_normal6"
+            android:layout_marginLeft="12dp"/>
+
+        <EditText
+            android:id="@+id/etitText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@color/white"
+            android:ems="12"
+            android:maxLength = "20"
+            android:hint="添加备注名"
+            android:textSize="15sp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_marginTop="8dp"
+            android:textColorHint="#999999"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/beizhu_name"
+                android:text="设置手机通讯录名字“小陈”为备注名"
+                android:layout_width="282dp"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/item_text_normal3"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/yuanjiao_layout1" />
+
+            <TextView
+                android:text="设置"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/shezhi_btn"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="@color/text_normal"
+                android:layout_marginLeft="15dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:background="@drawable/yuanjiao_layout1"
+                android:layout_weight="0.97" />
+        </LinearLayout>
+        <TextView
+            android:text="特别关注"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_normal6"
+            android:layout_marginLeft="12dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/ivWeiChat_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="设为特别关注"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_small" />
+            <com.guojisheng.koyview.UISwitchButton
+                xmlns:switch="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/switch_beizhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                switch:bmHeight="32dp"
+                switch:bmWidth="70dp" />
+        </LinearLayout>
+        <TextView
+            android:text="标签"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_normal6"
+            android:layout_marginLeft="12dp"/>
+        <RelativeLayout
+            android:id="@+id/item_about"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/item_list"
+            android:onClick="onClick"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp" >
+
+            <TextView
+                android:id="@+id/biaoqian"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/app_color"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textSize="@dimen/text_size_small"
+                android:layout_toLeftOf="@+id/imageButton"
+                android:layout_toStartOf="@+id/imageButton" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@null"
+                android:src="@drawable/admin_next" />
+        </RelativeLayout>
+        <TextView
+            android:text="电话号码"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_normal6"
+            android:layout_marginLeft="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/content_view"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true">
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lay_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/add_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/add_phone_img" />
+            <TextView
+                android:id="@+id/etiphone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:ems="11"
+                android:gravity="center|left"
+                android:text="添加电话号码"
+                android:inputType="number"
+                android:textSize="14sp"
+                android:textColor="#999999"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</com.baolinetworktechnology.shejiquan.view.MyRelativeLayout>

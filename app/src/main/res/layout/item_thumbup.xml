@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <com.baolinetworktechnology.shejiquan.view.CircleImg
+            android:id="@+id/circle_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/xiaotu" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="测试数据"
+                    android:textColor="#737373"
+                    android:textSize="14sp"/>
+
+                <ImageView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:background="@drawable/shape_hint"
+                    android:id="@+id/is_zuozhe"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"/>
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:maxLength="10"
+                    android:text="2015-06-17 16:26"
+                    android:textColor="#BCBCBC"
+                    android:textSize="11sp"
+                    android:layout_weight="1"
+                    android:gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp">
+
+                <TextView
+                    android:id="@+id/tv_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="赞了您的帖子"
+                    android:textSize="14sp"
+                    android:drawableLeft="@drawable/icon_thumb"
+                    android:drawablePadding="5dp"/>
+
+                <TextView
+                    android:text="《嘿嘿嘿》"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tie_name"
+                    android:layout_weight="1"
+                    android:textColor="#3886DD"
+                    android:textSize="14sp"
+
+                    android:drawablePadding="5dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="53dp"
+        android:layout_marginBottom="0.5dp"
+        android:background="@color/line" />
+
+</LinearLayout>

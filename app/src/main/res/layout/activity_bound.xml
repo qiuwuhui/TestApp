@@ -1,0 +1,260 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_top_height"
+        android:background="@color/white"
+        />
+
+    <RelativeLayout
+        android:id="@+id/aaaa"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/view3">
+
+        <ImageView
+            android:id="@+id/tv_title2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_login_finsh"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:layout_below="@+id/aaaa">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="15dp">
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:background="@drawable/icon_morentxy"
+                app:border_colo="#ffffff"
+                android:gravity="center"
+                app:border_widt="3dp"
+                android:id="@+id/user_long"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/set_bind_weichat_yes"
+                android:id="@+id/isCerti"
+                android:layout_marginRight="113dp"
+                android:layout_marginEnd="113dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+        </RelativeLayout>
+
+        <TextView
+            android:text="秋天的雪"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="11dp"
+            android:textColor="#666666"
+            android:id="@+id/tvName" />
+
+        <com.guojisheng.koyview.MyEditText
+            android:id="@+id/number_edit"
+            style="@style/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/home_con_icon_dlan_default"
+            android:paddingLeft="10dp"
+            android:hint="请输入手机号"
+            android:imeOptions="actionNext"
+            android:inputType="number" >
+
+            <requestFocus />
+        </com.guojisheng.koyview.MyEditText>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECECEC"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp">
+
+            <com.guojisheng.koyview.MyEditText
+                android:id="@+id/verify_edit"
+                style="@style/loginEditText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/home_con_icon_dlan_default"
+                android:drawablePadding="8dp"
+                android:hint="请输入验证码"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingLeft="10dp"
+                android:paddingRight="88dp" />
+
+            <com.baolinetworktechnology.shejiquan.view.Conde
+                android:id="@+id/gain_butt"
+                android:layout_width="74dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/btn_getcode_selector"
+                android:text="获取验证码"
+                android:textColor="#FD6530"
+                android:textSize="12sp" />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#ECECEC"/>
+
+        <TextView
+            android:text="手机号仅用于您的身份认证，同时为您提供最优质的服务，设计圈会保护您的信息安全，请放心填写"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView18" />
+
+        <Button
+            android:id="@+id/queding"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/anniu_shape1"
+            android:text="绑定手机号"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:text="绑定手机号，即表示您已同意"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/textss"
+            android:textColor="#B2B2B2"
+            android:gravity="right"
+            android:layout_weight="1" />
+        <TextView
+            android:text="《用户注册协议》"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/text_xy"
+            android:gravity="left"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/shwocomten"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/item_yingdao"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="45dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/yuanjiao_layout2"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/zhu_ce_shejishi"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageView7"
+                android:layout_gravity="center" />
+
+            <Button
+                android:id="@+id/zhidao"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:background="@drawable/anniu_shape"
+                android:text="知道了"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"/>
+
+            <TextView
+                android:text="为什么要绑定手机号"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="20sp"
+                android:layout_marginTop="18dp"
+                android:id="@+id/textView20"
+                android:layout_gravity="center"
+                android:layout_below="@+id/imageView7"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:text="根据这国家网络信息办公室颁布的《移动互联网应用程序信息服务管理规定》,从2016年8月1日起，互联网注册用户应当提供基于移动电话号码等方式的真实身份信息，才能进行发布作品、发贴、回复、私信、评论等互动操作，所以需要您绑定手机号。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvConten"
+                android:textColor="#666666"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_marginTop="28dp"
+                android:layout_gravity="center"
+                android:textSize="15sp"
+                android:layout_below="@+id/textView20"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

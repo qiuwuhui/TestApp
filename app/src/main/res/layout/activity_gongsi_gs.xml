@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFF"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/action_bar_height"
+                android:background="#FFF"
+                android:paddingTop="@dimen/action_bar_top_height" >
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="48dp"
+                    android:layout_height="match_parent"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:src="@drawable/nav_button_fhan_default" />
+
+                <View
+                    android:id="@+id/title_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#EEEEEE" />
+
+                <TextView
+                    android:id="@+id/tite_name"
+                    style="@style/textShadow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="工商注册信息"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View26"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout15"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView29"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="公司名称："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View25"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/enterpriseName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View24"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout12"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="企业类型："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View23"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/enterpriseType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View22"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout11"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView21"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="注册地址："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View21"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/registerAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未完善"
+                    android:textColor="#8C8C96" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View20"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout10"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="注册资金："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View19"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/registerFund"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View30"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout14"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/texsdfd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="营业期限："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/businessTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View28"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout13"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="成立日期："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View27"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/establishTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View10"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="登记机关："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View09"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/registerAuthority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未完善"
+                    android:textColor="#8C8C96" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View08"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="经营范围："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View07"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/operateRang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未完善"
+                    android:textColor="#8C8C96" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View06"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="年检时间："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View05"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/examineTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View04"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="注册号："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View03"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/registerNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" 
+                    android:text="未完善"
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <View
+                    android:id="@+id/View02"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#EEEEEE" />
+
+                <RelativeLayout
+                    android:id="@+id/RelativeLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:background="@drawable/item_list"
+                    android:onClick="onClick"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:drawableRight="@drawable/shape_hint"
+                        android:gravity="center_vertical"
+                        android:text="法人代表："
+                        android:textColor="@drawable/selector_btn_text"
+                        android:textSize="@dimen/text_size_small" />
+
+                    <View
+                        android:id="@+id/View01"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="#EEEEEE" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/legarPerson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="未完善" 
+                    android:textColor="#8C8C96"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PiegraphView">
+        <attr name="PiegraphView_radius" format="dimension" />
+        <attr name="PiegraphView_strokeWidth" format="dimension" />
+        <attr name="PiegraphView_moveSpeed" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="SwitchButton">
+        <attr name="bmWidth" format="dimension"></attr>
+        <attr name="bmHeight" format="dimension"></attr>
+    </declare-styleable>
+</resources>

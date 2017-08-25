@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/action_bar_height"
+        android:background="@color/white"
+        android:paddingTop="@dimen/action_bar_top_height" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/textShadow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="系统消息"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/ivClear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/ic_shanchu"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:src="@drawable/nav_button_fhan_default"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/ivClear"
+            android:layout_toEndOf="@+id/ivClear"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <com.baolinetworktechnology.shejiquan.view.RefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:divider="@color/line"
+        android:dividerHeight="0.5dp"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        ptr:ptrAnimationStyle="flip"
+        ptr:ptrHeaderTextColor="@color/pull_text" >
+    </com.baolinetworktechnology.shejiquan.view.RefreshListView>
+
+</LinearLayout>

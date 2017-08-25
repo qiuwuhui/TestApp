@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/casego"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/action_bar_height"
+    android:paddingTop="@dimen/action_bar_top_height" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_button_fhan_default" />
+        <TextView
+            android:id="@+id/tv_chent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lines="1"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="企业认证"
+            android:textSize="18sp" />
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RadioButton
+                android:id="@+id/rbMeitu"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="资料"
+                android:textColor="@drawable/selector_red_white"
+                android:textSize="16sp" />
+				<!-- android:background="@drawable/shape_selector_red_white_l"-->
+            <RadioButton
+                android:id="@+id/rbOpus"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="聊天"
+                android:textColor="@drawable/selector_red_white"
+                android:textSize="16sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:onClick="onClick"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:src="@drawable/nav_button_fxy_default" />
+
+        <View
+            android:id="@+id/Meitu_layout"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_alignLeft="@+id/radioGroup"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="4dp"
+            android:background="#FF3265"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/Opus_layout"
+            android:layout_width="40dp"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/radioGroup"
+            android:layout_marginBottom="3dp"
+            android:layout_marginRight="4dp"
+            android:background="#FF3265"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+</FrameLayout>

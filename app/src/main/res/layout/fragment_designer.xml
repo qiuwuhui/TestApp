@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar_back_serch1"
+        android:visibility="gone"/>
+
+    <include layout="@layout/include_designer_navbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.baolinetworktechnology.shejiquan.view.ListDesigner
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/myListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/line"
+            android:dividerHeight="0.5dp"
+            ptr:ptrAnimationStyle="flip"
+            ptr:ptrHeaderTextColor="@color/pull_text" >
+        </com.baolinetworktechnology.shejiquan.view.ListDesigner>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:id="@+id/title_near"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="88dp"
+                android:layout_marginRight="16dp"
+                android:gravity="center"
+                android:src="@drawable/navigationpng"
+                android:visibility="gone" />
+        </FrameLayout>
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ding_bu_fan"
+            android:id="@+id/ding_bu"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</LinearLayout>

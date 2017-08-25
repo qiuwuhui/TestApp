@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_list"
+    android:gravity="center_vertical"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp" >
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/btn_login_selector"
+        android:padding="8dp"
+        android:text="取消收藏"
+        android:textColor="@color/white"
+        android:visibility="visible" />
+
+    <RelativeLayout
+        android:id="@+id/liner_collect"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@drawable/item_list"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:scrollbars="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="测试标题"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="@dimen/item_inspi_title_size" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:ellipsize="end"
+            android:lines="2"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/item_text_normal3"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="1小时前"
+            android:textColor="@color/item_text_normal"
+            android:textSize="@dimen/item_inspi_text_size" />
+
+        <TextView
+            android:id="@+id/tv_class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:text="[行业动态]"
+            android:textColor="@color/item_text_normal"
+            android:textSize="@dimen/item_inspi_text_size" />
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+</RelativeLayout>

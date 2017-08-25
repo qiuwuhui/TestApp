@@ -1,0 +1,263 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/line"
+    android:orientation="vertical"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.BindManageActivity">
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp" >
+
+        <ImageView
+            android:id="@+id/ivPhone_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_phone_yes" />
+
+        <TextView
+            android:id="@+id/cellphone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.58"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="手机号"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/amend_butt"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="18050017399"
+            android:textSize="14sp"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0.37" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/item_passwod"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivPasswa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_phone_yes"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.10"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="修改密码"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <TextView
+            android:id="@+id/tv_ivPasswa"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center|right"
+            android:text="修改密码"
+            android:textColor="@color/text_normal"
+            android:layout_marginRight="8dp"
+            android:textSize="14sp"
+            android:layout_weight="0.08"
+            android:visibility="gone"/>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:src="@drawable/admin_next" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/ivTZ_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_qq_yes" />
+
+        <TextView
+            android:id="@+id/ivTZ_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="拓者设计吧"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+
+        <com.baolinetworktechnology.shejiquan.view.ButtonM
+            android:id="@+id/sbTZ"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="√已绑定"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ivWeiChat_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_weichat_yes" />
+
+        <TextView
+            android:id="@+id/ivWeiChat_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="微信"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+        <com.baolinetworktechnology.shejiquan.view.ButtonM
+            android:id="@+id/sbWX"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="√已绑定"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:id="@+id/ivQQ_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_qq_yes" />
+
+        <TextView
+            android:id="@+id/ivQQ_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="QQ"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+        <com.baolinetworktechnology.shejiquan.view.ButtonM
+            android:id="@+id/sbQQ"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:text="√已绑定"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <ImageView
+            android:id="@+id/ivSina_tp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/set_bind_sina_yes" />
+
+        <TextView
+            android:id="@+id/ivSina_tv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="8dp"
+            android:gravity="center_vertical"
+            android:text="微博"
+            android:textColor="@color/text_normal"
+            android:textSize="@dimen/text_size_small" />
+        <com.baolinetworktechnology.shejiquan.view.ButtonM
+            android:id="@+id/sbWB"
+            android:layout_width="80dp"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="√已绑定"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="13dp"
+        android:textSize="13sp"
+        android:text="第三方账号仅用于快捷登录，未经您允许，设计圈决不会用于 他途！"
+        android:textColor="#999999" />
+
+</LinearLayout>

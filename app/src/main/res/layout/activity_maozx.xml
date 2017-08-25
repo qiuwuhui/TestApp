@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MaozxActivity" >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map_ditu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </com.amap.api.maps.MapView>
+
+    <LinearLayout
+        android:id="@+id/all_lyou"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/action_bar_height" >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:src="@drawable/nav_button_fhan_default" />
+    </LinearLayout>
+
+</RelativeLayout>

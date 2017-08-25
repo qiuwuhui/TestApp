@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProjectFragment" >
+
+    <ScrollView
+        android:id="@+id/myscrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y230"
+                android:background="#EEEEEE" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/yuanjiao_layout2"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/xuqiu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/x15"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginTop="@dimen/x15"
+                        android:layout_marginRight="@dimen/x20"
+                        android:singleLine="true"
+                        android:ellipsize="end"
+                        android:text="厦门，一居室，120㎡，中式/欧式"
+                        android:textSize="@dimen/x35" />
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="根据您的需求，为您推荐优质商家"
+                        android:textColor="#D2D2DC" />
+
+                    <TextView
+                        android:id="@+id/xiugai"
+                        android:layout_width="72dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/x20"
+                        android:layout_marginTop="@dimen/y10"
+                        android:gravity="center"
+                        android:text="修改需求"
+                        android:textColor="#D2D2DC" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <com.baolinetworktechnology.shejiquan.view.KoyListView
+                android:id="@+id/myKoylist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </com.baolinetworktechnology.shejiquan.view.KoyListView>
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFF" 
+        >
+
+        <Button
+            android:id="@+id/sheji_btn"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/con_button_dwsb_default"
+            android:text="进入设计圈"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

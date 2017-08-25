@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/list_tongzhi"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff"
+        android:visibility="gone"
+        android:gravity="center_vertical">
+        <com.baolinetworktechnology.shejiquan.view.CircleImg
+            android:id="@+id/avatar"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="12dip"
+            android:src="@drawable/tong_xun_xin" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="新的朋友"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_deep"
+            android:textSize="14sp"
+            android:layout_marginStart="43dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_toEndOf="@+id/avatar" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:background="@color/acyivity_bg" />
+
+    <LinearLayout
+        android:id="@+id/list_add"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="新的朋友"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|left"
+            android:textColor="@color/list_itease_secondary_color"
+            android:layout_marginLeft="12dip"
+            android:textSize="13sp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView14" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="#fff"
+            android:gravity="center_vertical" >
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout03"
+                android:layout_width="wrap_content"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dip"
+                android:layout_alignParentLeft="true" >
+
+                <com.baolinetworktechnology.shejiquan.view.CircleImg
+                    android:id="@+id/Image_long"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/con_icon_xxtsjqxzs_def" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/add_py_mun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ease_unread_count_bg"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="24dp"
+                android:layout_marginEnd="11dp" />
+
+            <TextView
+                android:id="@+id/sheji_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/sheji_mun"
+                android:layout_alignBottom="@+id/sheji_mun"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/list_itease_secondary_color"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/RelativeLayout03"
+                android:layout_toEndOf="@+id/RelativeLayout03"
+                android:layout_marginLeft="10dp">
+
+                <TextView
+                    android:id="@+id/add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="朱金金"
+                    android:textColor="@color/black_deep"
+                    android:textSize="14sp"
+                    android:gravity="center|left"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/sheji_xx"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:gravity="center|left"
+                    android:textColor="@color/list_itease_secondary_color"
+                    android:textSize="10sp"
+                    android:text="请求添加你为好友"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_biaoqian"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:background="#fff"
+        android:gravity="center_vertical">
+        <com.baolinetworktechnology.shejiquan.view.CircleImg
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="12dip"
+            android:src="@drawable/tong_xun_biao" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black_deep"
+            android:textSize="14sp"
+            android:layout_marginStart="43dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_toEndOf="@+id/avatar" />
+    </LinearLayout>
+
+</LinearLayout>

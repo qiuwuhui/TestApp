@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp" >
+
+        <ImageView
+            android:id="@+id/userLogo"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="@dimen/x15"
+            android:scaleType="fitXY"
+            android:background="@drawable/icon_morentxs" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="@dimen/x450"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/userLogo"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/userLogo"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="厦门福旺居装饰工程有限公司"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tvTitle"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/icon_shouf" 
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/juli_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="57dp"
+            android:text="未知"
+            android:textColor="#8C8C96"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvTitle"
+            android:layout_marginTop="35dp" >
+
+            <TextView
+                android:id="@+id/tv_numCase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:text="设计方案：511"
+                android:textColor="#FF6464"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_numView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="咨询人数：16222"
+                android:textColor="#FF6464"
+                android:textSize="13sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EEEEEE" 
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginBottom="@dimen/y10"
+        android:text="您的装修预算约： 10万元" 
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginBottom="@dimen/y10"
+        android:text="本价格为毛坯房半包估算价格（不含水电报价），报价仅供参考，实际价格由实际工程量决定。"
+		android:textColor="#8C8C96"
+		android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#EEEEEE"
+        android:layout_marginBottom="5dp" 
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x15"
+            android:layout_marginRight="@dimen/x15"
+            android:text="业主xxx推荐：" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:rating="2"
+            android:numStars="5" />
+
+    </LinearLayout>
+.
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/x15"
+        android:layout_marginBottom="@dimen/y15"
+        android:layout_marginRight="@dimen/x15"
+        android:textColor="#8C8C96"
+        android:text="理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由  理由理由 "
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#EEEEEE" />
+
+</LinearLayout>

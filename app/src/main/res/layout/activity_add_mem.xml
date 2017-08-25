@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_mem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context="com.baolinetworktechnology.shejiquan.activity.AddMemActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:paddingTop="@dimen/action_bar_top_height"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#FFF" >
+
+                <TextView
+                    android:id="@+id/quxiao"
+                    android:text="取消"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/select_item_bg"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/item_text_normal3" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="选择联系人"
+                    android:textColor="@color/text_normal"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="55dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/tv_title"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/app_color"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/top_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/white">
+
+            <HorizontalScrollView
+                android:id="@+id/contem_lay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+                <LinearLayout
+                    android:id="@+id/add_conten"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:isScrollContainer="true"/>
+            </HorizontalScrollView>
+            <com.guojisheng.koyview.MyEditText
+                android:id="@+id/filter_edit"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                style="@style/AddeditTextStyle" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/contact_member"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:background="@color/white">
+           </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:id="@+id/contact_dialog"
+                android:layout_width="80.0dip"
+                android:layout_height="80.0dip"
+                android:layout_gravity="center"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:textColor="#ffffffff"
+                android:textSize="30.0dip"
+                android:visibility="invisible" />
+
+            <com.baolinetwkchnology.shejiquan.xiaoxi.SideBar
+                android:id="@+id/contact_sidebar"
+                android:layout_width="15dp"
+                android:layout_height="fill_parent"
+                android:layout_gravity="right|center"
+                android:layout_marginRight="3dp" />
+
+        </FrameLayout>
+    </LinearLayout>
+</RelativeLayout>

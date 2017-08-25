@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_radiu_white_null"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="请选择区域"
+            android:textColor="#333333"
+            android:textSize="19sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#FF575F" />
+
+        <com.baolinetworktechnology.shejiquan.view.ScrollerNumberPicker
+            xmlns:su="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/picker"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            su:itemNumber="4"
+            su:lineColor="#FF575F"
+            su:maskHight="32dp"
+            su:noEmpty="true"
+            su:normalTextColor="#A7A7A7"
+            su:normalTextSize="14sp"
+            su:selecredTextColor="#333333"
+            su:selecredTextSize="17sp"
+            su:unitHight="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_item_bg"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="取消"
+                android:textColor="#A7A7A7" />
+
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:background="@color/divider" />
+
+            <Button
+                android:id="@+id/btnOk"
+                android:layout_width="0dp"
+                android:layout_height="46dp"
+                android:layout_weight="1"
+                android:background="@drawable/select_item_bg"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="确定"
+                android:textColor="#FF575F" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

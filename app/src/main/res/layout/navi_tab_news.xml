@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="54dp"
+    android:clipChildren="false"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/ma_rg_all"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_rect_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        >
+
+        <RadioButton
+            android:id="@+id/ma_rb_insp"
+            style="@style/main_tab_style"
+            android:layout_width="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:checked="true"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/home_rb_inspiration_news"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/ma_rb_designer"
+            style="@style/main_tab_style"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/home_rb_designer_news"
+            android:text="通讯录" />
+
+        <RadioButton
+            android:id="@+id/ma_rb_works"
+            style="@style/main_tab_style"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/home_rb_work_news"
+            android:text="发现" />
+        <RadioButton
+            android:id="@+id/ma_rb_me"
+            style="@style/main_tab_style"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/home_rb_me_news"
+            android:text="我的" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/message_msg_num"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/ease_unread_count_bg"
+        android:textColor="@android:color/white"
+        android:textSize="12sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFF">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="2"
+        android:text="标题"
+        android:textColor="@drawable/selector_btn_text"
+        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/aaaa"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/iv_image"
+            android:layout_width="110dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zixun_tu"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/iv_images"
+            android:layout_width="110dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zixun_tu"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/iv_imagess"
+            android:layout_width="110dp"
+            android:layout_height="72dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/zixun_tu"
+            android:scaleType="centerCrop"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:text="资讯类型"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_leixin"
+            android:textColor="@color/item_text_normal3"
+            android:ellipsize="end"
+            android:lines="1"/>
+
+        <TextView
+            android:id="@+id/tvText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lineSpacingExtra="3dp"
+            android:lines="1"
+            android:text="text"
+            android:layout_marginRight="10dp"
+            android:textColor="#818080"
+            android:textSize="14sp"
+            android:gravity="right"
+            android:layout_weight="0.42" />
+    </LinearLayout>
+</LinearLayout>

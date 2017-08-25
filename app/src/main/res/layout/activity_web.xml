@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp" >
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/select_item_bg"
+            android:src="@drawable/nav_button_fhan_default" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:maxLength="10"
+            android:singleLine="true"
+            android:text="设计圈"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/ib_share"
+            android:layout_width="48dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/select_item_bg"
+            android:gravity="center"
+            android:padding="8dp"
+            android:src="@drawable/nav_button_fxy_default" />
+
+        <ProgressBar
+            android:id="@+id/da_pb"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@drawable/my_progress" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <WebView
+            android:id="@+id/webView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/acyivity_bg" />
+
+        <include
+            android:id="@+id/url_error"
+            layout="@layout/activity_url_error"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp" />
+
+</LinearLayout>

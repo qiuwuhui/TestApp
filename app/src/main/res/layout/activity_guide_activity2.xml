@@ -1,0 +1,168 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".SelectActivity" >
+
+    <LinearLayout
+        android:id="@+id/gong_lyout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayout01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/action_bar_height"
+            android:background="#FFF" >
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingTop="@dimen/action_bar_top_height"
+                android:text="花10秒钟让我们更了解您"
+                android:textColor="#FF6464"
+                android:textSize="@dimen/x35" />
+
+            <TextView
+                android:id="@+id/tiaoguo2"
+                android:layout_width="@dimen/x90"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingTop="@dimen/action_bar_top_height"
+                android:text="跳过"
+                android:textColor="#8C8C96" />
+
+            <ImageButton
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/select_item_bg"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="@dimen/action_bar_top_height"
+                android:src="@drawable/nav_button_fhan_default" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y45"
+            android:text="请设置您的房屋面积及地址"
+            android:textSize="@dimen/x40"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y25"
+            android:text="以便发现最适合的装修内容" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="@dimen/x450"
+            android:layout_height="@dimen/y600"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/edin_layout"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="@dimen/x450"
+                android:layout_height="@dimen/y450"
+                android:background="@drawable/shurutu" >
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/mianji"
+                    android:layout_alignBottom="@+id/mianji"
+                    android:layout_toRightOf="@+id/mianji"
+                    android:textColor="#8C8C96"
+                    android:textSize="18sp"
+                    android:text="㎡" />
+
+                <EditText
+                    android:id="@+id/mianji"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="39dp"
+                    android:layout_marginTop="64dp"
+                    android:background="#FFF"
+                    android:ems="10"
+                    android:gravity="right|center"
+                    android:hint="请输入"
+                    android:numeric="integer"
+                    android:textColor="#8C8C96"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#EEEEEE" />
+
+            <TextView
+                android:id="@+id/weizi"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/y150"
+				android:layout_gravity="center"
+				android:gravity="center"
+				android:drawableRight="@drawable/back_arrow"
+				android:textSize="17sp"
+				android:textColor="#8C8C96"
+				android:drawablePadding="3dp"
+                android:text="选择所在省市"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y35"
+            android:layout_gravity="center"
+            android:textSize="11sp"
+            android:text="根据您的户型、面积、城市为您提供当地装修报价" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFF" >
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/con_button_dwsb_default"
+            android:text="完成"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".MyXuanzheActivity" >
+  <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="@dimen/action_bar_height"
+          android:background="#FFF"
+          android:paddingTop="@dimen/action_bar_top_height" >
+
+          <TextView
+              android:id="@+id/tv_title"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_centerHorizontal="true"
+              android:gravity="center"
+              android:text="我的装修阶段"
+              android:textColor="#3C3C46"
+              android:textSize="18sp" />
+
+          <ImageView
+              android:id="@+id/back"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_alignParentLeft="true"
+              android:layout_alignParentTop="true"
+              android:background="@drawable/select_item_bg"
+              android:paddingLeft="16dp"
+              android:paddingRight="16dp"
+              android:src="@drawable/nav_button_fhan_default" />
+      </RelativeLayout>
+
+        <TextView
+            android:id="@+id/str_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/y35"
+            android:text="请及时更新您当前的装修阶段"
+             />
+
+        <TextView
+            android:id="@+id/str_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="以便我们为你发现最适合的装修内容" />
+
+        <com.baolinetworktechnology.shejiquan.view.HorizontalListView
+            android:id="@+id/Jdlist"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y680"
+            android:layout_marginTop="20dp" >
+        </com.baolinetworktechnology.shejiquan.view.HorizontalListView>
+
+        <TextView
+            android:id="@+id/text_fg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#FFF" >
+
+        <Button
+            android:id="@+id/btn_go"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y80"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/con_button_dwsb_default"
+            android:text="确定"
+            android:textColor="#FFF"
+            android:textSize="14sp" />
+    </RelativeLayout>
+    
+</RelativeLayout>

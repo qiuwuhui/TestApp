@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:layout_marginTop="32dp"
+    android:alpha="0.8"
+    android:background="#FFF"
+    android:orientation="horizontal"
+    android:padding="4dp" >
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/NumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:text="0"
+            android:textColor="@color/text_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NumView"
+            android:layout_centerHorizontal="true"
+            android:text="访客"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_vertical_full" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/NumCase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:text="0"
+            android:textColor="@color/text_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NumCase"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:text="作品"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_vertical_full" />
+
+    <RelativeLayout
+        android:id="@+id/itemNumConcer"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/NumConcer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:text="0"
+            android:textColor="@color/text_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NumConcer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:text="关注"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_vertical_full" />
+
+    <RelativeLayout
+        android:id="@+id/itemNumFans"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/NumFans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="2dp"
+            android:text="0"
+            android:textColor="@color/text_pressed"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/NumFans"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="8dp"
+            android:text="粉丝"
+            android:textColor="@drawable/selector_btn_text"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

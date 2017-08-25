@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/write"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_rect_white"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="我的足迹"
+            android:textSize="14sp"
+            android:textColor="@color/item_text_normal2" />
+
+        <TextView
+            android:id="@+id/tvClean"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/ic_thetrash"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="清空搜索历史"
+            android:textSize="13sp"
+            android:textColor="@drawable/selector_btn_text2" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.25dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/line" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+    </ListView>
+
+</LinearLayout>

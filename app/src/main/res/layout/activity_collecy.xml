@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+    tools:context=".CollectActivity" >
+
+    <include layout="@layout/title_bar_my_collect" />
+
+    <com.baolinetworktechnology.shejiquan.view.HomeViewPager
+        android:id="@+id/mainViewPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.baolinetworktechnology.shejiquan.view.HomeViewPager>
+
+</LinearLayout>

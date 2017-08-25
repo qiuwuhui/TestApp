@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:id="@+id/figureLay"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.baolinetworktechnology.shejiquan.view.CircleImg
+                android:id="@+id/shequ_loge"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/default_icon"
+                app:border_colo="#00000000"
+                app:border_widt="0.5dp" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="踩蘑菇的小男孩"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="#737373"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/contents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/text_normal6"
+            android:text="装修一整年终于毕业了！从装修菜鸟一路走来，翻阅了无 数装修日记贴，几乎每天当低头族，吃饭也不离手。终于 拯救了一套属于自己风格的房子修一整年终于毕业了！从装修菜鸟一路走来，翻阅了无 数装修日记贴，几乎每天当低头族，吃饭也不离手。终于 拯救了一套属于自己风格的房子" />
+
+        <com.baolinetworktechnology.shejiquan.view.NineGridTestLayout
+            android:id="@+id/layout_nine_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp" />
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="5dp">
+                <TextView
+                     android:id="@+id/tiem_post"
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dip"
+                     android:text="10分钟前"
+                     android:layout_weight="7.33"
+                     android:textColor="#A8A8A8"
+                     android:textSize="12sp"
+                     android:gravity="left|center" />
+                <TextView
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:id="@+id/chakan"
+                    android:textColor="#A8A8A8"
+                    android:paddingLeft="10dip"
+                    android:drawableLeft="@drawable/circle_pl"
+                    android:gravity="right|center"/>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/zong_layou">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/xiao_san_jiao"
+            android:layout_marginLeft="18dp"
+            android:id="@+id/imageView12" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F4F2F2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:text="张杰宝"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/cricle_dianzan"
+                android:drawablePadding="7dp"
+                android:textSize="13sp"
+                android:textColor="@color/app_cricle_color"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/dianzan"/>
+            <TextView
+                android:id="@+id/dian_lay"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/acyivity_bg"/>
+            <LinearLayout
+                android:id="@+id/itemReplys"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_weight="0.80"
+                android:orientation="vertical"
+                android:paddingBottom="10dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="2dip" >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/acyivity_bg"/>
+</LinearLayout>

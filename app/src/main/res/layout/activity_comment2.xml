@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/acyivity_bg"
+    android:orientation="vertical"
+     >
+
+    <include layout="@layout/title_bar_text_back" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:padding="16dp" >
+
+        <EditText
+            android:id="@+id/etitText"
+            style="@style/EditTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_rect_radiu_white"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="没事来说两句吧"
+            android:maxLength="256"
+            android:maxLines="10"
+            android:minLines="7"
+            android:padding="8dp" />
+
+        <TextView
+            android:id="@+id/tvNumer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/etitText"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="0/256"
+            android:textColor="@color/item_text_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_rect_white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="匿名评论" />
+
+        <com.guojisheng.koyview.SwitchButton
+            android:id="@+id/switchButton"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

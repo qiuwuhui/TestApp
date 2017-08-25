@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/gonglue_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="学装修知识标题，超过一行显示..." 
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/gonglei_commtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="" 
+        android:ellipsize="end"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:maxLines="3"
+        android:textColor="#8C8C96"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="right"
+        android:textColor="#FF4500"
+        android:text="攻略"
+         />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/acyivity_bg" />
+
+</LinearLayout>

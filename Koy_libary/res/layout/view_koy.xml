@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dip"
+    android:orientation="horizontal"
+    android:background="#FFF" >
+
+    <RelativeLayout
+        android:id="@+id/rl_column"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_weight="1.0" >
+
+        <com.guojisheng.koyview.ColumnHorizontalScrollView
+            android:id="@+id/mColumnHorizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:background="#FFF"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/mRadioGroup_content"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:background="#FFFFFF"
+                android:orientation="horizontal" >
+
+            </LinearLayout>
+        </com.guojisheng.koyview.ColumnHorizontalScrollView>
+
+        <ImageView
+            android:id="@+id/shade_left"
+            android:layout_width="10.0dip"
+            android:layout_height="36.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/channel_rightblock"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/shade_right"
+            android:layout_width="1dip"
+            android:layout_height="36dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/line"/>
+
+        <com.guojisheng.koyview.ColumnHorizontalScrollView
+            android:id="@+id/mColumnHorizontalScrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="3.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="#FFF"
+            android:scrollbars="none"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/mRadioGroup_content1"
+                android:layout_width="fill_parent"
+                android:layout_height="3.0dip"
+                android:layout_centerVertical="true"
+                android:background="#FFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </com.guojisheng.koyview.ColumnHorizontalScrollView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_more_columns"
+        android:layout_width="wrap_content"
+        android:layout_height="38.0dip"
+        android:background="#FFF">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:src="@drawable/con_button_gdtb_defau" />
+    </LinearLayout>
+
+</LinearLayout>

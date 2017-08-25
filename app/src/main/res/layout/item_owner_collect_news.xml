@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="112dp"
+    android:background="@drawable/item_list"
+    android:gravity="center_vertical"
+    android:padding="16dp"
+    android:scrollbars="horizontal" >
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="110dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_morentxs"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_image"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="title"
+        android:textColor="@drawable/selector_btn_text"
+        android:textSize="@dimen/text_size_title" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_image"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="描述"
+        android:textColor="@color/item_text_normal3"
+        android:textSize="@dimen/text_size_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/iv_image"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ws2_news_time"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="bottom"
+            android:lines="1"
+            android:maxLength="10"
+            android:text="0000-00-00"
+            android:textColor="@color/item_text_normal3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_numview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:drawableLeft="@drawable/ws2_news_eye"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLength="6"
+            android:text="0"
+            android:textColor="@color/item_text_normal3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ws2_news_favoritehui"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLength="6"
+            android:text="0"
+            android:textColor="@color/item_text_normal3"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_messge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:drawableLeft="@drawable/ws3_opus_mess"
+            android:drawablePadding="4dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:maxLength="6"
+            android:text="0"
+            android:textColor="@color/item_text_normal3"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

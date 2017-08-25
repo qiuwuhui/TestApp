@@ -1,0 +1,41 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CodeActivity" >
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </SurfaceView>
+
+    <com.baolinetworktechnology.shejiquan.view.ViewfinderView
+        android:id="@+id/viewfinderview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000" >
+    </com.baolinetworktechnology.shejiquan.view.ViewfinderView>
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/action_bar_top_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onClick"
+        android:scaleType="center"
+        android:src="@drawable/nav_back" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/action_bar_top_height"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="onClick"
+        android:padding="14dp"
+        android:src="@drawable/ic_menu_gallery" />
+
+</RelativeLayout>

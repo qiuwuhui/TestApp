@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="subscribe_bg">#fff5f5f5</color>
+    <color name="subscribe_tip_text">#ff2e2e2e</color>
+    <color name="salmon">#FF5661</color> <!-- 鲜肉色 -->
+    <color name="color_black">#333333</color>
+</resources>

@@ -1,0 +1,81 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8034" >
+
+    <RelativeLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/lunch_retina" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="24dp" >
+
+            <ImageView
+                android:id="@+id/ivLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_360logo"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tvAlpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="独家首发"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/loading_over2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#E6E6E6"
+            android:visibility="gone" >
+
+            <com.koy.loading.AVLoadingIndicatorView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="30dip"
+                app:indicator="LineScale"
+                app:indicator_color="@color/app_color" />
+
+            <TextView
+                android:id="@+id/tvDesigning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loading"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dip"
+                android:text="数据加载中..."
+                android:textColor="#737373" />
+
+            <include
+                android:id="@+id/url_error"
+                layout="@layout/activity_url_error"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

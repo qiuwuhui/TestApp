@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/cty_call_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="40dp"
+    tools:context=".CallActivity" >
+
+    <com.baolinetworktechnology.shejiquan.view.CircleImg
+        android:id="@+id/designer_iv_head"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="@dimen/action_bar_top_height"
+        android:src="@drawable/default_icon"
+        app:border_colo="#1B738B"
+        app:border_widt="3dp" />
+
+    <TextView
+        android:id="@+id/tvName"
+        style="@style/textShadowBalck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/designer_iv_head"
+        android:ellipsize="end"
+        android:maxLength="10"
+        android:paddingTop="@dimen/action_bar_top_height"
+        android:text="设计师"
+        android:textColor="#FFF"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/ivHonor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tvName"
+        android:layout_alignTop="@id/tvName"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="@dimen/action_bar_top_height"
+        android:layout_toRightOf="@id/tvName"
+        android:src="@drawable/weishop_admin_honor"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/ivGrade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/ivHonor"
+        android:layout_alignTop="@id/ivHonor"
+        android:layout_marginLeft="6dp"
+        android:layout_toRightOf="@id/ivHonor"
+        android:src="@drawable/grade"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tvFromCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/designer_iv_head"
+        android:drawableLeft="@drawable/icon_city_white"
+        android:drawablePadding="8dp"
+        android:gravity="bottom"
+        android:singleLine="true"
+        android:text="中国"
+        android:textColor="#fff"
+        android:textSize="@dimen/text_size_small" />
+
+    <TextView
+        android:id="@+id/tvCost"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:textColor="@color/text_normal6"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvCall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="32dp"
+            android:drawableTop="@drawable/icon_call_aty_phone"
+            android:text="     正在发起免费电话    "
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tvTips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            android:text="请接听4001513299来电"
+            android:textColor="#FFF"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="32dp" >
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="@drawable/btn_login_selector"
+            android:onClick="onClick"
+            android:text="取消"
+            android:textColor="#FFF"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="部分用户可能因手机套餐类型，由运营商收取接听或漫游费用"
+            android:textColor="#FFF"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</RelativeLayout>
