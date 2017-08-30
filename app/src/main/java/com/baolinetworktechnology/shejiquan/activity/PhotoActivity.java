@@ -458,7 +458,9 @@ public class PhotoActivity extends BaseActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		mViewPager.setAdapter(null);
+		if(mViewPager !=null){
+			mViewPager.setAdapter(null);
+		}
 	}
 	public void onConfigurationChanged(Configuration newConfig) {
 		super.onConfigurationChanged(newConfig);

@@ -350,13 +350,13 @@ public class WebDetailActivity extends BaseActivity {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		mRoot1.setFitsSystemWindows(false);
 		removeWebView();
 	}
 
 	private void removeWebView() {
 		// 一定要销毁，否则无法停止播放
 		if (mWebview != null) {
+			mRoot1.setFitsSystemWindows(false);
 			if (mWebview.getRootView() != null) {
 				((ViewGroup) mWebview.getRootView()).removeAllViews();
 			}

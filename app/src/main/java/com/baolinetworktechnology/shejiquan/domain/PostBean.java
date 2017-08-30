@@ -20,17 +20,19 @@ public class PostBean {
     private String title;
     private String contents;
     private int numGood;//点赞数
+
+    public boolean isDelete() {
+        return isDelete;
+    }
+
+    public void setDelete(boolean delete) {
+        isDelete = delete;
+    }
+
     private int numComment;//评论数
     private int numFavorite;//收藏数
-    private boolean isdeletemode =false;
+    private boolean isDelete;//是否选中删除
 
-    public boolean isdeletemode() {
-        return isdeletemode;
-    }
-
-    public void setIsdeletemode(boolean isdeletemode) {
-        this.isdeletemode = isdeletemode;
-    }
     public boolean isGood() {
         return isGood;
     }

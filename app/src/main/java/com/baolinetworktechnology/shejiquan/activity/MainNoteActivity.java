@@ -489,8 +489,8 @@ public class MainNoteActivity extends BaseActivity {
         super.onDestroy();
         if(llContentView != null){
             llContentView.removeAllViews();
+            mRoot1.setFitsSystemWindows(false);
         }
-        mRoot1.setFitsSystemWindows(false);
     }
     private boolean IShasFocus=true;
     @Override

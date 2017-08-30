@@ -142,7 +142,6 @@ public class MainHomeFragment extends BaseMainFragment implements IBackPressed,
     }
 
     private int pageIndex = 1;
-
     public void onPause() {
         super.onPause();
     }

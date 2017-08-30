@@ -115,22 +115,22 @@ public class NewAdapter extends BaseAdapter {
 				 holder1.iv_image.setVisibility(View.GONE);
 				 holder1.iv_images.setVisibility(View.GONE);
 				 holder1.iv_imagess.setVisibility(View.GONE);
-				 if(news.newItemInfoList != null){
-					 if(news.newItemInfoList.size() == 1){
+				 if(news.getNewItemInfoList() != null){
+					 if(news.getNewItemInfoList().size() == 1){
 						 holder1.iv_image.setVisibility(View.VISIBLE);
-						 mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-					 }else if(news.newItemInfoList.size() == 2){
+						 mImageUtil.display(holder1.iv_image,news.getNewItemInfoList().get(0).getSmallImages());
+					 }else if(news.getNewItemInfoList().size() == 2){
 						 holder1.iv_image.setVisibility(View.VISIBLE);
 						 holder1.iv_images.setVisibility(View.VISIBLE);
-						 mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-						 mImageUtil.display(holder1.iv_images, news.newItemInfoList.get(1).getSmallImages());
-					 }else if(news.newItemInfoList.size() == 3){
+						 mImageUtil.display(holder1.iv_image,news.getNewItemInfoList().get(0).getSmallImages());
+						 mImageUtil.display(holder1.iv_images, news.getNewItemInfoList().get(1).getSmallImages());
+					 }else if(news.getNewItemInfoList().size() == 3){
 						 holder1.iv_image.setVisibility(View.VISIBLE);
 						 holder1.iv_images.setVisibility(View.VISIBLE);
 						 holder1.iv_imagess.setVisibility(View.VISIBLE);
-						 mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-						 mImageUtil.display(holder1.iv_images, news.newItemInfoList.get(1).getSmallImages());
-						 mImageUtil.display(holder1.iv_imagess, news.newItemInfoList.get(2).getSmallImages());
+						 mImageUtil.display(holder1.iv_image, news.getNewItemInfoList().get(0).getSmallImages());
+						 mImageUtil.display(holder1.iv_images,  news.getNewItemInfoList().get(1).getSmallImages());
+						 mImageUtil.display(holder1.iv_imagess, news.getNewItemInfoList().get(2).getSmallImages());
 					 }
 				 }
 					convertView.setTag(holder1);
@@ -177,22 +177,22 @@ public class NewAdapter extends BaseAdapter {
 						holder1.iv_image.setVisibility(View.GONE);
 						holder1.iv_images.setVisibility(View.GONE);
 						holder1.iv_imagess.setVisibility(View.GONE);
-						if(news.newItemInfoList != null){
-							if(news.newItemInfoList.size() == 1){
+						if(news.getNewItemInfoList() != null){
+							if(news.getNewItemInfoList().size() == 1){
 								holder1.iv_image.setVisibility(View.VISIBLE);
-								mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-							}else if(news.newItemInfoList.size() == 2){
+								mImageUtil.display(holder1.iv_image, news.getNewItemInfoList().get(0).getSmallImages());
+							}else if(news.getNewItemInfoList().size() == 2){
 								holder1.iv_image.setVisibility(View.VISIBLE);
 								holder1.iv_images.setVisibility(View.VISIBLE);
-								mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-								mImageUtil.display(holder1.iv_images, news.newItemInfoList.get(1).getSmallImages());
-							}else if(news.newItemInfoList.size() == 3){
+								mImageUtil.display(holder1.iv_image, news.getNewItemInfoList().get(0).getSmallImages());
+								mImageUtil.display(holder1.iv_images, news.getNewItemInfoList().get(1).getSmallImages());
+							}else if(news.getNewItemInfoList().size() == 3){
 								holder1.iv_image.setVisibility(View.VISIBLE);
 								holder1.iv_images.setVisibility(View.VISIBLE);
 								holder1.iv_imagess.setVisibility(View.VISIBLE);
-								mImageUtil.display(holder1.iv_image, news.newItemInfoList.get(0).getSmallImages());
-								mImageUtil.display(holder1.iv_images, news.newItemInfoList.get(1).getSmallImages());
-								mImageUtil.display(holder1.iv_imagess, news.newItemInfoList.get(2).getSmallImages());
+								mImageUtil.display(holder1.iv_image, news.getNewItemInfoList().get(0).getSmallImages());
+								mImageUtil.display(holder1.iv_images, news.getNewItemInfoList().get(1).getSmallImages());
+								mImageUtil.display(holder1.iv_imagess, news.getNewItemInfoList().get(2).getSmallImages());
 							}
 						}
 					break;

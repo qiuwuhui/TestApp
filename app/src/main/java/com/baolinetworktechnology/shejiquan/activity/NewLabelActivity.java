@@ -142,8 +142,10 @@ public class NewLabelActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        recyclerView.setAdapter(null);
-        unregisterReceiver(mybroad);
+        if(recyclerView !=null){
+            recyclerView.setAdapter(null);
+            unregisterReceiver(mybroad);
+        }
     }
     @Override
     protected void setUpViewAndData() {

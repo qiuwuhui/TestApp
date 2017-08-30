@@ -10,6 +10,7 @@ import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.baolinetworktechnology.shejiquan.R;
@@ -29,16 +30,18 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
     private RadioButton mRB1;
     private RadioButton mRB2;
     private RadioButton mRB3;
-    private TextView mTvDelete;
+    private RelativeLayout deleteLayout;
+    private TextView mTvMode,mTvDelete;
     private View tuei_view;
     private View tuei_view1;
     private View tuei_view2;
     private ViewPager mViewPage;
-    private CollectCaseFragment mCollectCaseFragment;
-    private CollectNewsFragment mCollectNewsFragment;
-    private CollectPostFragment mCollectPostFragment;
+    private CollectCaseFragment mCollectCaseFragment;//案例
+    private CollectNewsFragment mCollectNewsFragment;//资讯
+    private CollectPostFragment mCollectPostFragment;//帖子
     private MyBroadcastReciver mybroad;
     private boolean mIsDeleteMode;
+    private int deletemun;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -49,6 +52,7 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
         intentFilter.addAction("Caseshow");
         intentFilter.addAction("Newshow");
         intentFilter.addAction("Postshow");
+        intentFilter.addAction("deletemun");
         mybroad=new MyBroadcastReciver();
         registerReceiver(mybroad, intentFilter);
         initview();
@@ -59,6 +63,9 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
         mRB1 = (RadioButton) findViewById(R.id.rbCass);
         mRB2 = (RadioButton) findViewById(R.id.rbNew);
         mRB3 = (RadioButton) findViewById(R.id.rbTie);
+        deleteLayout = (RelativeLayout) findViewById(R.id.deleteLayout);
+        mTvMode = (TextView) findViewById(R.id.tv_mode);
+        mTvMode.setOnClickListener(this);
         mTvDelete = (TextView) findViewById(R.id.tv_delete);
         mTvDelete.setOnClickListener(this);
         mRB1.setOnClickListener(this);
@@ -95,14 +102,14 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
             case 0:
                 mRB1.setChecked(true);
                 mViewPage.setCurrentItem(0);
-                mIsDeleteMode = false;
+                pageChange(0);
                 tuei_view.setVisibility(View.VISIBLE);
                 tuei_view1.setVisibility(View.INVISIBLE);
                 tuei_view2.setVisibility(View.INVISIBLE);
                 break;
             case 1:
                 mRB2.setChecked(true);
-                mIsDeleteMode = false;
+                pageChange(1);
                 mViewPage.setCurrentItem(1);
                 tuei_view.setVisibility(View.INVISIBLE);
                 tuei_view1.setVisibility(View.VISIBLE);
@@ -110,7 +117,7 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
                 break;
             case 2:
                 mRB3.setChecked(true);
-                mIsDeleteMode = false;
+                pageChange(2);
                 mViewPage.setCurrentItem(2);
                 tuei_view.setVisibility(View.INVISIBLE);
                 tuei_view1.setVisibility(View.INVISIBLE);
@@ -137,40 +144,61 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
                 tuei_view.setVisibility(View.VISIBLE);
                 tuei_view1.setVisibility(View.INVISIBLE);
                 tuei_view2.setVisibility(View.INVISIBLE);
-                mIsDeleteMode = false;
+                pageChange(0);
                 break;
             case R.id.rbNew:
                 mViewPage.setCurrentItem(1);
                 tuei_view.setVisibility(View.INVISIBLE);
                 tuei_view1.setVisibility(View.VISIBLE);
                 tuei_view2.setVisibility(View.INVISIBLE);
-                mIsDeleteMode = false;
+                pageChange(1);
                 break;
             case R.id.rbTie:
                 mViewPage.setCurrentItem(2);
                 tuei_view.setVisibility(View.INVISIBLE);
                 tuei_view1.setVisibility(View.INVISIBLE);
                 tuei_view2.setVisibility(View.VISIBLE);
-                mIsDeleteMode = false;
+                pageChange(2);
                 break;
-            case R.id.tv_delete:
+            case R.id.tv_mode:
+                deletemun = 0;
+                mTvDelete.setText("删除" +"("+deletemun+")");
                 if (mIsDeleteMode){
                     mIsDeleteMode = false;
+                    mTvMode.setText("编辑");
+                    deleteLayout.setVisibility(View.GONE);
                 }else {
                     mIsDeleteMode = true;
+                    mTvMode.setText("取消");
+                    deleteLayout.setVisibility(View.VISIBLE);
                 }
                 if (mViewPage.getCurrentItem() == 0){
+                    mCollectCaseFragment.DeleteMode(mIsDeleteMode);
                 }else if (mViewPage.getCurrentItem() == 1){
+                    mCollectNewsFragment.DeleteMode(mIsDeleteMode);
                 }else if (mViewPage.getCurrentItem() == 2){
                     mCollectPostFragment.DeleteMode(mIsDeleteMode);
                 }
+                break;
+            case R.id.tv_delete:
+                if (mViewPage.getCurrentItem() == 0){
+                    mCollectCaseFragment.batchDelete();
+                }else if (mViewPage.getCurrentItem() == 1){
+                    mCollectNewsFragment.batchDelete();
+                }else if (mViewPage.getCurrentItem() == 2){
+                    mCollectPostFragment.batchDelete();
+                }
+                break;
+            default:
                 break;
         }
     }
     @Override
     public void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(mybroad);
+        if(mybroad !=null){
+            unregisterReceiver(mybroad);
+        }
     }
     private class MyBroadcastReciver extends BroadcastReceiver {
 
@@ -186,6 +214,23 @@ public class MyCollectionActivity extends BaseFragmentActivity implements View.O
             if(action.equals("Postshow")){
                 mCollectPostFragment.shuaxin();
             }
+            if(action.equals("deletemun")){
+                deletemun =intent.getIntExtra("mun",0);
+                mTvDelete.setText("删除" +"("+deletemun+")");
+            }
+        }
+    }
+    public void pageChange(int currentpage){
+        mIsDeleteMode = false;
+        deleteLayout.setVisibility(View.GONE);
+        mTvMode.setText("编辑");
+        deletemun = 0;
+        if (currentpage ==0){
+            mCollectCaseFragment.DeleteMode(mIsDeleteMode);
+        }else if (currentpage == 1){
+            mCollectNewsFragment.DeleteMode(mIsDeleteMode);
+        }else if (currentpage ==2){
+            mCollectPostFragment.DeleteMode(mIsDeleteMode);
         }
     }
 }

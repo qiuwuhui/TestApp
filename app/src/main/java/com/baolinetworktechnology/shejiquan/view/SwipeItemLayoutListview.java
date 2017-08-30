@@ -1,5 +1,5 @@
 
-package com.baolinetworktechnology.shejiquan.tongxunlu;
+package com.baolinetworktechnology.shejiquan.view;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -325,7 +325,7 @@ public class SwipeItemLayoutListview extends RelativeLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        mDragHelper.processTouchEvent(event);
+//        mDragHelper.processTouchEvent(event);
         mGestureDetectorCompat.onTouchEvent(event);
         return true;
     }

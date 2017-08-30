@@ -314,8 +314,10 @@ OnCallBackList<City>{
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		gvCityAdapter=null;
-		InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
-		imm.hideSoftInputFromWindow(myEt.getWindowToken(), 0); //强制隐藏键盘
+		if(gvCityAdapter !=null){
+			gvCityAdapter=null;
+			InputMethodManager imm = (InputMethodManager) getSystemService(getApplicationContext().INPUT_METHOD_SERVICE);
+			imm.hideSoftInputFromWindow(myEt.getWindowToken(), 0); //强制隐藏键盘
+		}
 	}
 }

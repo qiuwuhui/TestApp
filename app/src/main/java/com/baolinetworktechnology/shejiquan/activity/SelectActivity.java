@@ -157,7 +157,9 @@ public class SelectActivity extends BaseActivity implements AMapLocationListener
    }
 	@Override
 	protected void onDestroy() {
-		mLocationClient.stopLocation();
+		if(mLocationClient != null){
+			mLocationClient.stopLocation();
+		}
 		super.onDestroy();
 	}
 	@Override

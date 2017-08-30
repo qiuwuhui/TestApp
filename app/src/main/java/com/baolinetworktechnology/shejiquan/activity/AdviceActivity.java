@@ -160,7 +160,9 @@ public class AdviceActivity extends BaseActivity {
 
 	@Override
 	protected void onDestroy() {
-		dialog = null;
+		if(dialog != null){
+			dialog = null;
+		}
 		super.onDestroy();
 
 	}

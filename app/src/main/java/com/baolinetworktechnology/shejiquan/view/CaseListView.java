@@ -18,6 +18,7 @@ import com.baolinetworktechnology.shejiquan.activity.WebOpusActivity;
 import com.baolinetworktechnology.shejiquan.activity.WeiShopActivity;
 import com.baolinetworktechnology.shejiquan.adapter.CollectOwnerOpusAdapter;
 import com.baolinetworktechnology.shejiquan.adapter.SwCollectOwnerOpusAdapter;
+import com.baolinetworktechnology.shejiquan.adapter.SwCollectOwnerOpusAdapter2;
 import com.baolinetworktechnology.shejiquan.app.SJQApp;
 import com.baolinetworktechnology.shejiquan.constant.ApiUrl;
 import com.baolinetworktechnology.shejiquan.constant.AppTag;
@@ -55,7 +56,7 @@ import org.json.JSONObject;
 public class CaseListView extends PullToRefreshListView {
 	private HttpUtils mHttpUtils;
 	// private RequestCallBack<String> callBack;
-	private SwCollectOwnerOpusAdapter mCollAdapter;
+	private SwCollectOwnerOpusAdapter2 mCollAdapter;
 	private MyDialog dialog;
 	// private boolean flag = false;
 	private int mPageIndex = 1;
@@ -201,7 +202,7 @@ public class CaseListView extends PullToRefreshListView {
 		endLabels.setPullLabel("上拉加载更多");// 刚下拉时，显示的提示
 		endLabels.setRefreshingLabel("正在载入中...");// 刷新时
 		endLabels.setReleaseLabel("放开加载更多");// 下来达到一定距离时，显示的提示
-		mCollAdapter = new SwCollectOwnerOpusAdapter(getActivity());
+		mCollAdapter = new SwCollectOwnerOpusAdapter2(getActivity());
 		setAdapter(mCollAdapter);
 	}
 
@@ -263,6 +264,10 @@ public class CaseListView extends PullToRefreshListView {
 								mCollAdapter.setData(newsBean.listData);
 
 							} else {
+								if (newsBean.listData.size() == 0) {
+									pulldownFooter
+											.setState(PulldownFooter.STATE_COMPLETE_NULL_NEW_DATA);
+								}
 								mCollAdapter.addData(newsBean.listData);
 							}
 
@@ -331,5 +336,15 @@ public class CaseListView extends PullToRefreshListView {
 
 	public void delete(int position, View view) {
 		mCollAdapter.doCollect(position, view);
+	}
+	private boolean isDeleteMode = false;
+	//批量删除
+	public void bitchdelete(){
+		mCollAdapter.doBitchCollect();
+	}
+
+	public void setDeleteMode(boolean ismode) {
+		isDeleteMode = ismode;
+		mCollAdapter.showDelete(isDeleteMode);
 	}
 }

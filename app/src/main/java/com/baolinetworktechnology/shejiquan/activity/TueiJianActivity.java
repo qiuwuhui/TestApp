@@ -260,6 +260,8 @@ OnClickListener, OnPageChangeListener {
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		unregisterReceiver(mybroad);
+		if(mybroad != null){
+			unregisterReceiver(mybroad);
+		}
 	}
 }

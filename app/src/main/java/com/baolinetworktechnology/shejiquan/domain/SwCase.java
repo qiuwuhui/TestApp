@@ -16,8 +16,17 @@ public class SwCase extends  BaseBean{
 	private String userGUID;
 	public String title;
 	private String descriptions;
-	private String images;
 
+	public boolean isDelete() {
+		return isDelete;
+	}
+
+	public void setDelete(boolean delete) {
+		isDelete = delete;
+	}
+
+	private String images;
+	private boolean isDelete;//是否选中删除
 	public int getNumGood() {
 		return numGood;
 	}

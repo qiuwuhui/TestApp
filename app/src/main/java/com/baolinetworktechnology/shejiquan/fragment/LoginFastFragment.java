@@ -457,7 +457,9 @@ public class LoginFastFragment extends BaseFragment implements OnOAuthListener{
 	private Button btnLogin;
 	@Override
 	public void onDestroy() {
-		mDialog = null;
+		if(mDialog != null){
+			mDialog = null;
+		}
 		super.onDestroy();
 	}
 

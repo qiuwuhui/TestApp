@@ -115,6 +115,10 @@ public interface AppUrl {
 	 */
 	String FAVORITE_ADD = "/api/services/app/favorite/AddFavorite";
 	/**
+	 * 批量删除收藏案例POST
+	 */
+	String FAVORITE_CANCEL = "/api/services/app/favorite/CancelFavorite";
+	/**
 	 * 获取你喜欢的类型的案例和攻略
 	 */
 	String CUESSYOULIKE = "/api/services/app/user/GuessYouLike?currentPage=";
@@ -254,6 +258,10 @@ public interface AppUrl {
 	 * 社区帖子收藏
 	 */
 	String OPERATEPOSTADD = "/api/services/app/posts/OperatePostsFavorite";
+	/**
+	 * 批量删除社区帖子收藏
+	 */
+	String CANCELPOSTSFAVORITE = "/api/services/app/posts/CancelPostsFavorite";
 	/**
 	 * 社区帖子是否收藏
 	 */

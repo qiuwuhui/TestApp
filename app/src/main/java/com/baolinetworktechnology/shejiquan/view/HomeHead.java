@@ -303,7 +303,7 @@ public class HomeHead extends FrameLayout implements OnClickListener {
 			}
 			hzAdapter.setList(listData);
 			hzAdapter.notifyDataSetChanged();
-//			loadSJLunBo(0);
+
 		}
 
 	}

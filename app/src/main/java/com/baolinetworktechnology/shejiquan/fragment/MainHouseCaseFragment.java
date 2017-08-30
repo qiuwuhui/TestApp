@@ -146,8 +146,10 @@ public class MainHouseCaseFragment extends BaseMainFragment implements
 	}
 	@Override
 	public void onDestroy() {
-		setCase(SJQApp.getClassMap().getList("全屋风格"));
-		setCase(SJQApp.getClassMap().getList("全屋户型"));
+		if(mCaseListView != null){
+			setCase(SJQApp.getClassMap().getList("全屋风格"));
+			setCase(SJQApp.getClassMap().getList("全屋户型"));
+		}
 		super.onDestroy();
 	}
 	private void initData() {

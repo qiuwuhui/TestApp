@@ -568,10 +568,12 @@ public class MainActivity extends MPermissionsActivity implements
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		unregisterReceiver(mybroad);
-		mainPageAdapter = null;
-		mainViewPage = null;
-		mNavigTab = null;
+		if(mainPageAdapter != null){
+			unregisterReceiver(mybroad);
+			mainPageAdapter = null;
+			mainViewPage = null;
+			mNavigTab = null;
+		}
 		// // 在Service销毁的时候销毁定位资源
 //		stopLocation();
 		// System.exit(0);

@@ -5,6 +5,8 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.LayoutInflater;
@@ -41,46 +43,45 @@ public class CollectPostFragment extends BaseFragment {
 			view = View.inflate(getActivity(), R.layout.fragment_collect_post,
 					null);
 			mCaseListView = (PostListView) view.findViewById(R.id.PostListView);
-			mCaseListView.getRefreshableView().setOnItemLongClickListener(
-					new OnItemLongClickListener() {
-
-						@Override
-						public boolean onItemLongClick(AdapterView<?> parent,
-													   final View view, final int position, long id) {
-
-							View dialogView = View.inflate(getActivity(),
-									R.layout.dialog_collect, null);
-							TextView titl = (TextView) dialogView
-									.findViewById(R.id.dialog_title);
-							titl.setText("确定要取消收藏？");
-							final AlertDialog ad = new AlertDialog.Builder(
-									getActivity()).setView(dialogView).show();
-							dialogView.findViewById(R.id.dialog_cancel)
-									.setOnClickListener(new OnClickListener() {
-
-										@Override
-										public void onClick(View v) {
-
-											ad.cancel();
-										}
-
-									});
-							dialogView.findViewById(R.id.dialog_ok)
-									.setOnClickListener(new OnClickListener() {
-
-										@Override
-										public void onClick(View v) {
-											mCaseListView
-													.delete(position - 1, view);
-											ad.cancel();
-										}
-									});
-
-							return true;
-						}
-					});
-			mCaseListView.setChangData(true,
-					ExplosionField.attach2Window(getActivity()));
+//			mCaseListView.getRefreshableView().setOnItemLongClickListener(
+//					new OnItemLongClickListener() {
+//
+//						@Override
+//						public boolean onItemLongClick(AdapterView<?> parent,
+//													   final View view, final int position, long id) {
+//
+//							View dialogView = View.inflate(getActivity(),
+//									R.layout.dialog_collect, null);
+//							TextView titl = (TextView) dialogView
+//									.findViewById(R.id.dialog_title);
+//							titl.setText("确定要取消收藏？");
+//							final AlertDialog ad = new AlertDialog.Builder(
+//									getActivity()).setView(dialogView).show();
+//							dialogView.findViewById(R.id.dialog_cancel)
+//									.setOnClickListener(new OnClickListener() {
+//
+//										@Override
+//										public void onClick(View v) {
+//											ad.cancel();
+//										}
+//
+//									});
+//							dialogView.findViewById(R.id.dialog_ok)
+//									.setOnClickListener(new OnClickListener() {
+//
+//										@Override
+//										public void onClick(View v) {
+//											mCaseListView
+//													.delete(position - 1, view);
+//											ad.cancel();
+//										}
+//									});
+//
+//							return true;
+//						}
+//					});
+//			mCaseListView.setChangData(true,
+//					ExplosionField.attach2Window(getActivity()));
 		}
 		return view;
 	}
@@ -130,6 +131,9 @@ public class CollectPostFragment extends BaseFragment {
 	public void DeleteMode(boolean isdelete){
 		mIsDeleteMode = isdelete;
 		mCaseListView.setDeleteMode(mIsDeleteMode);
+	}
+	public void batchDelete(){
+		mCaseListView.bitchdelete();
 	}
 
 }

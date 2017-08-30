@@ -201,6 +201,7 @@ public class SettingActivity extends BaseActivity {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+
 		return version;
 	}
 	@Override

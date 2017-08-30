@@ -134,9 +134,9 @@ public class SJRecycFragment extends BaseFragment {
 		getHttpUtils().send(HttpRequest.HttpMethod.GET, AppUrl.API+ url, getParams(url),
 				callBack);
 	}
-	public void onDestroy() {
-		super.onDestroy();
-		SJRecyclerView.setAdapter(null);
-		System.gc();
+	public void setAdapter() {
+		if(SJRecyclerView != null){
+			SJRecyclerView.setAdapter(null);
+		}
 	}
 }

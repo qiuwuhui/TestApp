@@ -14,6 +14,7 @@ import android.widget.ListView;
 import com.baolinetworktechnology.shejiquan.R;
 import com.baolinetworktechnology.shejiquan.activity.WebDetailActivity;
 import com.baolinetworktechnology.shejiquan.adapter.CollectOwnerNewsAdapter;
+import com.baolinetworktechnology.shejiquan.adapter.CollectOwnerNewsAdapter2;
 import com.baolinetworktechnology.shejiquan.constant.ApiUrl;
 import com.baolinetworktechnology.shejiquan.constant.AppTag;
 import com.baolinetworktechnology.shejiquan.constant.AppUrl;
@@ -49,7 +50,7 @@ import org.json.JSONObject;
 public class NewsListView extends PullToRefreshListView {
 	private HttpUtils mHttpUtils;
 	private PulldownFooter mPulldownFooter;
-	private CollectOwnerNewsAdapter mAdapter;
+	private CollectOwnerNewsAdapter2 mAdapter;
 	private RequestParams mParams;
 	private String mUserGuid;
 	private boolean mIsDivPage;
@@ -135,7 +136,6 @@ public class NewsListView extends PullToRefreshListView {
 					// footerTitle.setText("更多数据正在加载中");
 					//
 					// pulldown_footer_loading.setVisibility(View.VISIBLE);
-
 				} else if (!mIsDivPage
 						&& scrollState == OnScrollListener.SCROLL_STATE_IDLE) {
 					mPulldownFooter.setState(PulldownFooter.STATE_FREE);
@@ -155,7 +155,7 @@ public class NewsListView extends PullToRefreshListView {
 		endLabels.setRefreshingLabel("正在载入中...");// 刷新时
 		endLabels.setReleaseLabel("放开加载更多");// 下来达到一定距离时，显示的提示
 		// 设置适配器
-		mAdapter = new CollectOwnerNewsAdapter(getActivity());
+		mAdapter = new CollectOwnerNewsAdapter2(getActivity());
 		setAdapter(mAdapter);
 	}
 
@@ -204,8 +204,6 @@ public class NewsListView extends PullToRefreshListView {
 
 							if (!falg) {
 								if (newsBean.listData.size() == 0) {
-//									mPulldownFooter
-//											.setState(PulldownFooter.STATE_COMPLETE_NULL_DATA,"您还没有收藏博文哦");
 								}
 								mAdapter.setData(newsBean.listData);
 
@@ -284,5 +282,15 @@ public class NewsListView extends PullToRefreshListView {
 	public void setChangData(boolean is, ExplosionField mExplosionField) {
 		// TODO Auto-generated method stub
 		mAdapter.setChangData(is,mExplosionField);
+	}
+	private boolean isDeleteMode = false;
+	//批量删除
+	public void bitchdelete(){
+		mAdapter.doBitchCollect();
+	}
+
+	public void setDeleteMode(boolean ismode) {
+		isDeleteMode = ismode;
+		mAdapter.showDelete(isDeleteMode);
 	}
 }

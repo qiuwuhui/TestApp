@@ -117,6 +117,7 @@ public class MainInspirationFragment extends Fragment implements View.OnClickLis
 		intentFilter.addAction("shejiquan");
 		intentFilter.addAction("OpusSave");
 		intentFilter.addAction("XGTCommentSuCCESS");//效果图列表的评论返回
+		intentFilter.addAction("refreshCase");
 		mybroad=new MyBroadcastReciver();
 		getActivity().registerReceiver(mybroad, intentFilter);
 		mViewPage = (ViewPager) view.findViewById(R.id.viewPager);
@@ -490,6 +491,9 @@ public class MainInspirationFragment extends Fragment implements View.OnClickLis
 				int position = intent.getIntExtra("POSITION",0);
 				int number = intent.getIntExtra("PLNUMBER",0);
 				mainhomeCaseFragment.updateitem(position,number);
+			}
+			if(action.equals("refreshCase")){
+				mainhomeCaseFragment.go2GuideActivity();
 			}
 //			else if(action.equals("DETAILS")){//
 //				int position = intent.getIntExtra("POSITION",0);

@@ -42,10 +42,10 @@ public class MyPostDetailsActivity extends BaseActivity implements View.OnClickL
     private String TAG = "MyPostDetails";
     private myPostAdapter mAdapter;
     private RefreshListView mCaseListView;
-    private TextView mChangeState,mDelete;
-    private boolean mIsDeleteMode;//是否进入删除模式
+//    private RelativeLayout deleteLayout;
+//    private TextView mChangeState,mDelete;
+//    private boolean mIsDeleteMode;//是否进入删除模式
     private int nullDdrawable = R.drawable.icon_my_post;
-    private RelativeLayout deleteLayout;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -74,14 +74,14 @@ public class MyPostDetailsActivity extends BaseActivity implements View.OnClickL
     }
     private void initView() {
         mCaseListView = (RefreshListView)findViewById(R.id.MypostList);
-        mChangeState = (TextView) findViewById(R.id.changeState);
-        deleteLayout = (RelativeLayout) findViewById(R.id.deleteLayout);
-        mDelete = (TextView) findViewById(R.id.tv_delete);
-        mDelete.setOnClickListener(this);
+//        mChangeState = (TextView) findViewById(R.id.changeState);
+//        deleteLayout = (RelativeLayout) findViewById(R.id.deleteLayout);
+//        mDelete = (TextView) findViewById(R.id.tv_delete);
+//        mDelete.setOnClickListener(this);
         mCaseListView.getPulldownFooter().isShowBottom(true);
         mCaseListView.setOnLoadListener(this);
         mAdapter = new myPostAdapter(this);
-        mIsDeleteMode = false;
+//        mIsDeleteMode = false;
         mCaseListView.setAdapter(mAdapter);
 //        mCaseListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 //
@@ -98,30 +98,30 @@ public class MyPostDetailsActivity extends BaseActivity implements View.OnClickL
 //                }
 //            }
 //        });
-        mChangeState.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (mIsDeleteMode){
-                    mIsDeleteMode = false;
-                }else {
-                    mIsDeleteMode = true;
-                }
-                if (mIsDeleteMode){//进入删除
-                    deleteLayout.setVisibility(View.VISIBLE);
-                    mChangeState.setText("保存");
-                    mAdapter.isIsdeletemode(true);
-                    mAdapter.notifyDataSetChanged();
-                    mDelete.setVisibility(View.VISIBLE);
-                }else {
-                    deleteLayout.setVisibility(View.GONE);
-                    mChangeState.setText("编辑");
-                    mAdapter.isIsdeletemode(false);
-                    mAdapter.emptyMap();
-                    mAdapter.notifyDataSetChanged();
-                    mDelete.setVisibility(View.GONE);
-                }
-            }
-        });
+//        mChangeState.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                if (mIsDeleteMode){
+//                    mIsDeleteMode = false;
+//                }else {
+//                    mIsDeleteMode = true;
+//                }
+//                if (mIsDeleteMode){//进入删除
+//                    deleteLayout.setVisibility(View.VISIBLE);
+//                    mChangeState.setText("保存");
+//                    mAdapter.isIsdeletemode(true);
+//                    mAdapter.notifyDataSetChanged();
+//                    mDelete.setVisibility(View.VISIBLE);
+//                }else {
+//                    deleteLayout.setVisibility(View.GONE);
+//                    mChangeState.setText("编辑");
+//                    mAdapter.isIsdeletemode(false);
+//                    mAdapter.emptyMap();
+//                    mAdapter.notifyDataSetChanged();
+//                    mDelete.setVisibility(View.GONE);
+//                }
+//            }
+//        });
         mCaseListView.setOnRefreshing();
         findViewById(R.id.back).setOnClickListener(this);
         findViewById(R.id.share_show).setOnClickListener(this);
@@ -199,6 +199,9 @@ public class MyPostDetailsActivity extends BaseActivity implements View.OnClickL
                         mAdapter.setData(bean.listData);
                     }else{
                         mAdapter.addData(bean.listData);
+                    }
+                    if(bean.listData.size()==0){
+                        mCaseListView.setOnNullNewsData();
                     }
                 }
             }

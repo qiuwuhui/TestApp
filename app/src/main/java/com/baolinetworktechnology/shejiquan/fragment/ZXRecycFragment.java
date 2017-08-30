@@ -134,9 +134,9 @@ public class ZXRecycFragment extends BaseFragment {
 		getHttpUtils().send(HttpRequest.HttpMethod.GET, AppUrl.API + url, getParams(url),
 				callBack);
 	}
-	public void onDestroy() {
-		super.onDestroy();
-		ZXRecyclerView.setAdapter(null);
-		System.gc();
+	public void setAdapter() {
+		if(ZXRecyclerView != null){
+			ZXRecyclerView.setAdapter(null);
+		}
 	}
 }

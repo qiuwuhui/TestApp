@@ -176,4 +176,9 @@ public class JianJieFragment extends BaseFragment {
 		getHttpUtils().send(HttpRequest.HttpMethod.GET, AppUrl.API + url, getParams(url),
 				callBack);
 	}
+	public void setAdapter() {
+		if(ry_gridview != null){
+			ry_gridview.setAdapter(null);
+		}
+	}
 }

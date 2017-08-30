@@ -1328,8 +1328,8 @@ public class MeDetailInfoActivity extends BaseActivity {
 		}
 		if(popupwindow != null){
 			popupwindow.dismiss();
+			mRoot1.setFitsSystemWindows(false);
 		}
-		mRoot1.setFitsSystemWindows(false);
 	}
 	@Override
 	public void permissionSuccess(int requestCode) {

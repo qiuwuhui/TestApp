@@ -81,7 +81,6 @@ public class PostListView extends PullToRefreshListView {
             caceKey = "collect" + mUserGuid;
             getCace();
         }
-
         // 设置适配器
         // dialog.show();
         mPageIndex = 1;
@@ -140,9 +139,9 @@ public class PostListView extends PullToRefreshListView {
             @Override
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
-                if (isDeleteMode) {
-
-                } else {
+//                if (isDeleteMode) {
+//
+//                } else {
                     PostBean news = (PostBean) mCollAdapter.getItem(position - 1);
                     if (news == null)
                         return;
@@ -150,7 +149,7 @@ public class PostListView extends PullToRefreshListView {
                     intent.putExtra(AppTag.TAG_GUID, news.getGuid());
                     intent.putExtra("IsPost", "0");
                     mContext.startActivity(intent);
-                }
+//                }
 
             }
 
@@ -253,10 +252,13 @@ public class PostListView extends PullToRefreshListView {
                                 if (!TextUtils.isEmpty(caceKey))
                                     CacheUtils.cacheStringData(getActivity(),
                                             "List", caceKey, n.result);
-
                                 mCollAdapter.setData(bean.listData);
 
                             } else {
+                                if (bean.listData.size() == 0) {
+                                    pulldownFooter
+                                            .setState(PulldownFooter.STATE_COMPLETE_NULL_NEW_DATA);
+                                }
                                 mCollAdapter.addData(bean.listData);
                             }
 
@@ -324,12 +326,14 @@ public class PostListView extends PullToRefreshListView {
     }
 
     public void delete(int position, View view) {
-        mCollAdapter.doCollect(position, view);
+    }
+    //批量删除
+    public void bitchdelete(){
+        mCollAdapter.doBitchCollect();
     }
 
     public void setDeleteMode(boolean ismode) {
         isDeleteMode = ismode;
         mCollAdapter.showDelete(isDeleteMode);
-
     }
 }

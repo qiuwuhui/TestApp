@@ -34,47 +34,47 @@ public class CollectCaseFragment extends BaseFragment {
 			view = View.inflate(getActivity(), R.layout.fragment_collect_case,
 					null);
 			mCaseListView = (CaseListView) view.findViewById(R.id.caseListView);
-			mCaseListView.setChangData(true,
-					ExplosionField.attach2Window(getActivity()));
-
-			mCaseListView.getRefreshableView().setOnItemLongClickListener(
-					new OnItemLongClickListener() {
-
-						@Override
-						public boolean onItemLongClick(AdapterView<?> parent,
-													   final View view, final int position, long id) {
-
-							View dialogView = View.inflate(getActivity(),
-									R.layout.dialog_collect, null);
-							TextView titl = (TextView) dialogView
-									.findViewById(R.id.dialog_title);
-							titl.setText("确定要取消收藏？");
-							final AlertDialog ad = new AlertDialog.Builder(
-									getActivity()).setView(dialogView).show();
-							dialogView.findViewById(R.id.dialog_cancel)
-									.setOnClickListener(new OnClickListener() {
-
-										@Override
-										public void onClick(View v) {
-
-											ad.cancel();
-										}
-
-									});
-							dialogView.findViewById(R.id.dialog_ok)
-									.setOnClickListener(new OnClickListener() {
-
-										@Override
-										public void onClick(View v) {
-											mCaseListView
-													.delete(position - 1, view);
-											ad.cancel();
-										}
-									});
-
-							return true;
-						}
-					});
+//			mCaseListView.setChangData(true,
+//					ExplosionField.attach2Window(getActivity()));
+//
+//			mCaseListView.getRefreshableView().setOnItemLongClickListener(
+//					new OnItemLongClickListener() {
+//
+//						@Override
+//						public boolean onItemLongClick(AdapterView<?> parent,
+//													   final View view, final int position, long id) {
+//
+//							View dialogView = View.inflate(getActivity(),
+//									R.layout.dialog_collect, null);
+//							TextView titl = (TextView) dialogView
+//									.findViewById(R.id.dialog_title);
+//							titl.setText("确定要取消收藏？");
+//							final AlertDialog ad = new AlertDialog.Builder(
+//									getActivity()).setView(dialogView).show();
+//							dialogView.findViewById(R.id.dialog_cancel)
+//									.setOnClickListener(new OnClickListener() {
+//
+//										@Override
+//										public void onClick(View v) {
+//
+//											ad.cancel();
+//										}
+//
+//									});
+//							dialogView.findViewById(R.id.dialog_ok)
+//									.setOnClickListener(new OnClickListener() {
+//
+//										@Override
+//										public void onClick(View v) {
+//											mCaseListView
+//													.delete(position - 1, view);
+//											ad.cancel();
+//										}
+//									});
+//
+//							return true;
+//						}
+//					});
 		}
 
 		return view;
@@ -121,7 +121,12 @@ public class CollectCaseFragment extends BaseFragment {
 	public void shuaxin(){
 		mCaseListView.setRefreshing();
 	}
-	public void intoDeleteMode(){
-
+	//是否进入批量删除模式
+	public void DeleteMode(boolean isdelete){
+		mIsDeleteMode = isdelete;
+		mCaseListView.setDeleteMode(mIsDeleteMode);
+	}
+	public void batchDelete(){
+		mCaseListView.bitchdelete();
 	}
 }

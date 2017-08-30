@@ -384,8 +384,10 @@ public class MembersActivity extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(mybroad);
-        mRecyclerView.setAdapter(null);
+        if(mRecyclerView !=null){
+            unregisterReceiver(mybroad);
+            mRecyclerView.setAdapter(null);
+        }
     }
     @Override
     protected void setUpViewAndData() {

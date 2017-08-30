@@ -182,9 +182,11 @@ public class MainHomeCaseFragment extends BaseMainFragment implements
 	}
 	@Override
 	public void onDestroy() {
-		setCase(SJQApp.getClassMap().getList("风格"));
-		setCase(SJQApp.getClassMap().getList("户型"));
-		setCase(SJQApp.getClassMap().getList("面积"));
+		if(mCaseListView != null){
+			setCase(SJQApp.getClassMap().getList("风格"));
+			setCase(SJQApp.getClassMap().getList("户型"));
+			setCase(SJQApp.getClassMap().getList("面积"));
+		}
 		super.onDestroy();
 	}
 	private void initData() {
@@ -202,7 +204,7 @@ public class MainHomeCaseFragment extends BaseMainFragment implements
 				break;
 		}
 	}
-	private void go2GuideActivity() {
+	public void go2GuideActivity() {
 		time = new CountDownTimer(600, 600) {
 
 			@Override

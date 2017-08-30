@@ -444,11 +444,12 @@ public class SJQEaseChatFragment extends EaseBaseFragment implements EMMessageLi
 	        if (groupListener != null) {
 	            EMClient.getInstance().groupManager().removeGroupChangeListener(groupListener);
 	        }
+			if(toChatUsername != null){
+				if(chatType == EaseConstant.CHATTYPE_CHATROOM){
+					EMClient.getInstance().chatroomManager().leaveChatRoom(toChatUsername);
+				}
+			}
 
-	        if(chatType == EaseConstant.CHATTYPE_CHATROOM){
-	            EMClient.getInstance().chatroomManager().leaveChatRoom(toChatUsername);
-	        }
-	        
 	        if(chatRoomChangeListener != null){
 	            EMClient.getInstance().chatroomManager().removeChatRoomChangeListener(chatRoomChangeListener);
 	        }

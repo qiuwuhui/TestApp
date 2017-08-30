@@ -436,9 +436,11 @@ public class CommentListActivity extends BaseActivity implements ILoadData {
 
 	@Override
 	protected void onDestroy() {
-		etComment = null;
-		mListView = null;
-		mRoot1.setFitsSystemWindows(false);
+		if(mListView !=null){
+			etComment = null;
+			mListView = null;
+			mRoot1.setFitsSystemWindows(false);
+		}
 		super.onDestroy();
 
 	}

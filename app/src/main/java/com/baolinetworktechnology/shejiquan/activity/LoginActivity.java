@@ -173,7 +173,9 @@ public class LoginActivity extends FragmentActivity implements OnClickListener,
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		mDialog = null;
+		if(mDialog != null){
+			mDialog = null;
+		}
 
 	}
 

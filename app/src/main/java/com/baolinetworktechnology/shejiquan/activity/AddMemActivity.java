@@ -432,9 +432,11 @@ public class AddMemActivity extends BaseActivity {
     @Override
         protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(mybroad);
-        mRecyclerView.setAdapter(null);
-        add_conten.removeAllViews();
+        if(mRecyclerView != null){
+            unregisterReceiver(mybroad);
+            mRecyclerView.setAdapter(null);
+            add_conten.removeAllViews();
+        }
     }
     @Override
     protected void setUpViewAndData() {

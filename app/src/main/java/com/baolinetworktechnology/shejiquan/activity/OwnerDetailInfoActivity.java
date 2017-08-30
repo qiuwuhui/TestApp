@@ -1141,9 +1141,9 @@ public class OwnerDetailInfoActivity extends BaseActivity {
 		super.onDestroy();
 		if(popupwindow != null){
 			popupwindow.dismiss();
+			mRoot1.setFitsSystemWindows(false);
+			dialog = null;
 		}
-		mRoot1.setFitsSystemWindows(false);
-		dialog = null;
 	}
 	private boolean puanduan(String str,String Show){
 		String aa=str.substring(str.length()-1);

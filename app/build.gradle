@@ -13,8 +13,8 @@ android {
         applicationId "com.baolinetworktechnology.shejiquan"
         minSdkVersion 14
         targetSdkVersion 25
-        versionCode 45
-        versionName "2.4.2"
+        versionCode 46
+        versionName "2.4.4"
         multiDexEnabled true
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         manifestPlaceholders = [

@@ -536,7 +536,9 @@ public class ReceiveFragment extends BaseFragment implements ILoadData{
 	}
 	public void onDestroy() {
 		super.onDestroy();
-		mRoot1.setFitsSystemWindows(false);
+		if(mRoot1 != null){
+			mRoot1.setFitsSystemWindows(false);
+		}
 	}
 	public void setTabClick() {
 		int position = mListView.getRefreshableView()

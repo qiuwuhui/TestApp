@@ -364,6 +364,8 @@ public class SelectCityActivity extends BaseActivity implements
 	@Override
 	protected void onDestroy() {
 		super.onDestroy();
-		gvCityAdapter=null;
+		if(gvCityAdapter != null){
+			gvCityAdapter=null;
+		}
 	}
 }

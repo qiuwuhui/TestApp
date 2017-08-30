@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.baolinetworktechnology.shejiquan.view.SwipeItemLayoutListview
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/con_item_lay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    app:bga_sil_bottomMode="pullOut"
+    app:bga_sil_springDistance="20dp"
+    app:bga_sil_swipeDirection="right">
+    <LinearLayout
+        android:id="@+id/deleteLayout"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:id="@+id/img_delete"
+            android:background="@drawable/rb_bg_no"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.baolinetworktechnology.shejiquan.RoundRecImageView
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/opus_height"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/icon_defult"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/item_list"
+            android:layout_marginBottom="15dp">
+
+            <TextView
+                android:id="@+id/tvTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:singleLine="true"
+                android:text="空间类型|几图"
+                android:textColor="#ABABAB"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_favorat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tvTitle"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="收藏  0"
+                android:textColor="#ABABAB"
+                android:textSize="12sp" />
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@id/llayout"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="测试标题"
+                android:textColor="@color/text_normal"
+                android:textSize="@dimen/text_size_title" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</com.baolinetworktechnology.shejiquan.view.SwipeItemLayoutListview>

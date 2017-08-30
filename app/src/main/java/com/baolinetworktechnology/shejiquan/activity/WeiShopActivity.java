@@ -1040,4 +1040,12 @@ public class WeiShopActivity extends BaseFragmentActivity implements OnClickList
 		intent.putExtra("name",name);
 		sendBroadcast(intent);
 	}
+	@Override
+	protected void onDestroy() {
+		super.onDestroy();
+		sjRecycFragment.setAdapter();
+		jianCaiFragment.setAdapter();
+		zxRecycFragment.setAdapter();
+		jianJieFragment.setAdapter();
+	}
 }

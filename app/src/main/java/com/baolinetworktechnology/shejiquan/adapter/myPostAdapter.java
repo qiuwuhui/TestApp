@@ -63,7 +63,7 @@ public class myPostAdapter extends BaseAdapter {
     private Context mContex;
     private MyDialog dialog;
     private ViewHolder viewHolder;
-    private boolean isdeletemode;
+//    private boolean isdeletemode;
     private HashMap<Integer, Boolean> deleteMap = new HashMap<Integer, Boolean>();//保存item选中状态 key:position value:isclick
     public myPostAdapter(Context context) {
         this.mContex = context;
@@ -138,7 +138,7 @@ public class myPostAdapter extends BaseAdapter {
         } else {
             viewHolder.contents.setText(bean.getContents());
         }
-        //遍历map,如果行号不存在则添加
+        //如果行号不存在则添加
         if (deleteMap.size() == 0){
             deleteMap.put(0,false);
         }
@@ -198,27 +198,25 @@ public class myPostAdapter extends BaseAdapter {
                 ItemSelected(position);
             }
         });
-        if (isdeletemode) {//设置是否删除模式
-            viewHolder.delete.setVisibility(View.VISIBLE);
-            viewHolder.chao_zuo.setVisibility(View.GONE);
-        } else {
-            viewHolder.delete.setVisibility(View.GONE);
-            viewHolder.chao_zuo.setVisibility(View.VISIBLE);
-        }
-        if (deleteMap.get(position)){//显示
-            viewHolder.delete.setBackgroundResource(R.drawable.dian_zan_jie_on);
-        }else{
-            viewHolder.delete.setBackgroundResource(R.drawable.dian_zan_jie);
-        }
-
-
-
+//        if (isdeletemode) {//设置是否删除模式
+//            viewHolder.delete.setVisibility(View.VISIBLE);
+//            viewHolder.chao_zuo.setVisibility(View.GONE);
+//        } else {
+//            viewHolder.delete.setVisibility(View.GONE);
+//            viewHolder.chao_zuo.setVisibility(View.VISIBLE);
+//        }
+//        if (deleteMap.get(position)){//显示
+//            viewHolder.delete.setBackgroundResource(R.drawable.add_men_check);
+//        }else{
+//            viewHolder.delete.setBackgroundResource(R.drawable.rb_bg_no);
+//        }
         return convertView;
     }
 
     class ViewHolder {
         NineGridTestLayout imageLayout;
-        ImageView chao_zuo, delete;
+        ImageView chao_zuo;
+        ImageView delete;
         TextView Post_name, contents;
         TextView chakan, pinluen, dianzan, tiem_post;
 
@@ -366,31 +364,31 @@ public class myPostAdapter extends BaseAdapter {
         return httpUtil;
     }
 
-    public boolean isIsdeletemode(boolean isdelete) {
-        isdeletemode = isdelete;
-        return isdeletemode;
-    }
+//    public boolean isIsdeletemode(boolean isdelete) {
+//        isdeletemode = isdelete;
+//        return isdeletemode;
+//    }
     //listview item 点击跳转或者选中
     public void ItemClick(int position,PostBean bean) {
-        if (isdeletemode){
-            //编辑模式下,点击选中item
-            ItemSelected(position);
-        }else {
+//        if (isdeletemode){
+//            //编辑模式下,点击选中item
+//            ItemSelected(position);
+//        }else {
             Intent intent = new Intent(mContex, PostDetailsActivity.class);
             intent.putExtra(AppTag.TAG_GUID, bean.getGuid());
             mContex.startActivity(intent);
-        }
+//        }
     }
     //item选中
     public void ItemSelected(int position){
         if (deleteMap.get(position) == false){//未选中
-            viewHolder.delete.setBackgroundResource(R.drawable.dian_zan_jie_on);
+            viewHolder.delete.setBackgroundResource(R.drawable.add_men_check);
             deleteMap.put(position,true);
             Log.e("TAG"+TAG,deleteMap.toString());
             notifyDataSetChanged();
         }else {
             deleteMap.put(position,false);
-            viewHolder.delete.setBackgroundResource(R.drawable.dian_zan_jie);
+            viewHolder.delete.setBackgroundResource(R.drawable.rb_bg_no);
             Log.e("TAG"+TAG,deleteMap.toString());
             notifyDataSetChanged();
         }

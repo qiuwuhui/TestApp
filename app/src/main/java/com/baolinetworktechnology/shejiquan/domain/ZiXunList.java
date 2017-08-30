@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.TimeZone;
 
 public class ZiXunList {
+	public resultBen result;
 	public int id;
 	public String guid;
 	public String title;
@@ -25,11 +26,21 @@ public class ZiXunList {
 	public String images;
 	public String descriptions;
 	public String contents;
+
+	public boolean isDelete() {
+		return isDelete;
+	}
+
+	public void setDelete(boolean delete) {
+		isDelete = delete;
+	}
+
 	public String createTime;
 	public String seoKeywords;
 	public String seoDescription;
-	public List<DesignerCaseList> newItemInfoList;
+	private List<DesignerCaseList> newItemInfoList;
 	private String linkUrl;
+	private boolean isDelete;//是否选中删除
 //	public DesignerCaseList newItemInfoList;
 
 	private String FromatDate;// 格式化时间
@@ -150,5 +161,11 @@ public class ZiXunList {
 
 		return Time;
 	}
+	public List<DesignerCaseList> getNewItemInfoList() {
+		return newItemInfoList;
+	}
 
+	public void setNewItemInfoList(List<DesignerCaseList> newItemInfoList) {
+		this.newItemInfoList = newItemInfoList;
+	}
 }

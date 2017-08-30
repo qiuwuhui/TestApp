@@ -383,7 +383,9 @@ public class MessageSystemFragment extends BaseFragment implements
 	
 	@Override
 	public void onDestroy() {
-		dialog=null;
+		if(dialog != null){
+			dialog=null;
+		}
 		super.onDestroy();
 		
 	}

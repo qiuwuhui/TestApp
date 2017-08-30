@@ -2,5 +2,8 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/DatePicker" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/library_pulltorefresh" vcs="svn" />
+    <mapping directory="$PROJECT_DIR$/library_talk" vcs="svn" />
   </component>
 </project>

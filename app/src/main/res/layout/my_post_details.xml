@@ -53,17 +53,6 @@
             android:text="我的帖子"
             android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/changeState"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginRight="10dp"
-            android:gravity="center"
-            android:text="编辑"
-            android:textSize="16sp" />
     </RelativeLayout>
 
     <FrameLayout

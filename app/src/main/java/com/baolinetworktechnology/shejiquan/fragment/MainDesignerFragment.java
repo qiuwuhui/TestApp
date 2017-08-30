@@ -375,8 +375,11 @@ public class MainDesignerFragment extends BaseMainFragment implements
 	@Override
 	public void onDestroy() {
 		super.onDestroy();
-		setCase(SJQApp.getClassMap().getList("设计师风格"));
-		setCase(SJQApp.getClassMap().getList("擅长空间"));
+		if(mDesignerListView !=null){
+			setCase(SJQApp.getClassMap().getList("设计师风格"));
+			setCase(SJQApp.getClassMap().getList("擅长空间"));
+
+		}
 	}
 
 	private void setCase(List<CaseClass> caseList) {

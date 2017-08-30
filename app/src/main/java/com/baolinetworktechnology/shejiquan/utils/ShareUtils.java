@@ -68,7 +68,6 @@ public class ShareUtils {
 		mDialogShare = new DialogShare(context, this);
 		mIWXAPI = WXAPIFactory.createWXAPI(context, AppTag.WeChatAppID, true);
 		mIWXAPI.registerApp(AppTag.WeChatAppID);
-
 		mController.getConfig().setSsoHandler(mSinaSsoHandler);
 	}
 
